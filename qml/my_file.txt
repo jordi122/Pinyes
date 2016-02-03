@@ -1,0 +1,372 @@
+Pinya,Adria Gil,186,131,0
+Pinya,Alba,181,131,0
+Crosses,Alba,181,131,0
+Pinya,Alba Grayston,193,137,0
+Crosses,Alba Grayston,193,137,0
+Pinya,Albert Ivars,226,157,0
+Primeres,Albert Ivars,226,157,0
+Pinya,Albert Pahissa,205,144,0
+Pinya,Albert Pi,223,156,0
+Primeres,Albert Pi,223,156,0
+Pinya,Alex Caja,200,140,0
+Pinya,Alex Cuesta,203,142,0
+Pinya,Alex Novell,215,154,0
+Pinya,Alfons,212,148,0
+Pinya,Alfons,212,148,0
+Pinya,Altissen,218,0,0
+Pinya,Anna Domenech,190,135,0
+Crosses,Anna Domenech,190,135,0
+Pinya,Anna Gonzalez,204,144,0
+Pinya,Anna Isabel,181,130,0
+Pinya,AnnaP,192,137,0
+Crosses,AnnaP,192,137,0
+Pinya,Antonio,216,151,0
+Pinya,Arnau,216,154,0
+Pinya,Arnau Salvador,207,146,0
+Pinya,Asael,227,159,0
+Primeres,Asael,227,159,0
+Pinya,Aurin,210,157,0
+Pinya,Baldellou,213,155,0
+Pinya,Barbara,195,137,0
+Crosses,Barbara,195,137,0
+Pinya,Barni,213,152,0
+Pinya,Belen,179,0,0
+Pinya,Bernat,206,150,0
+Pinya,Besora,208,147,0
+Pinya,Boixadera,197,139,0
+Pinya,Brahim,209,147,0
+Pinya,Brian,202,145,0
+Pinya,Cairo,227,160,0
+Primeres,Cairo,227,160,0
+Pinya,Camila,185,135,0
+Crosses,Camila,185,135,0
+Pinya,Campanera,209,150,0
+Pinya,Campanera,209,150,0
+Pinya,Cara,211,152,0
+Pinya,Carina,181,0,0
+Crosses,Carina,181,0,0
+Pinya,Carles Caja,209,153,0
+Baixos,Carles Caja,209,153,0
+Pinya,Carles DeMiguel,190,136,0
+Pinya,Carles Simo,235,167,0
+Primeres,Carles Simo,235,167,0
+Pinya,Casado,211,147,0
+Agulles,Casado,211,147,0
+Pinya,Cesc,217,152,0
+Agulles,Cesc,217,152,0
+Pinya,Clara,185,132,0
+Crosses,Clara,185,132,0
+Pinya,Claudia Escalas,179,0,0
+Crosses,Claudia Escalas,179,0,0
+Pinya,Coco,216,153,0
+Pinya,Compromis,214,151,0
+Pinya,Cordoba,221,161,0
+Pinya,Coro,194,138,0
+Pinya,Dani Benitez,202,140,0
+Baixos,Dani Benitez,202,140,0
+Contraforts,Dani Benitez,202,140,0
+Pinya,Dani Casas,202,144,0
+Baixos,Dani Casas,202,144,0
+Contraforts,Dani Casas,202,144,0
+Pinya,David Baciero,196,139,0
+Pinya,David Benabarre,204,146,0
+Pinya,David Bros,201,145,0
+Pinya,David Castejon,195,139,0
+Pinya,David Guimera,189,140,0
+Pinya,Demantaras,212,148,0
+Pinya,Diego,215,151,0
+Pinya,Eduard,211,153,0
+Agulles,Eduard,211,153,0
+Pinya,Eduard Valls,218,153,0
+Pinya,Egea,216,155,0
+Pinya,Elena Castan,186,131,0
+Crosses,Elena Castan,186,131,0
+Pinya,Elisenda,186,131,0
+Crosses,Elisenda,186,131,0
+Pinya,Emili,203,148,0
+Contraforts,Emili,203,148,0
+Pinya,Eric,211,150,0
+Pinya,Escorihuela,207,150,0
+Pinya,Esteban,213,155,0
+Pinya,Ester Estadella,207,147,0
+Agulles,Ester Estadella,207,147,0
+Pinya,Esteve Guimera,204,144,0
+Contraforts,Esteve Guimera,204,144,0
+Pinya,Eva Hernandez,196,138,0
+Crosses,Eva Hernandez,196,138,0
+Pinya,Fermi Gil,192,143,0
+Pinya,Ferran Suarez,225,156,0
+Primeres,Ferran Suarez,225,156,0
+Pinya,Figa,203,142,0
+Pinya,Figuerola,223,156,0
+Primeres,Figuerola,223,156,0
+Pinya,Forca,218,148,0
+Pinya,Francisco,223,161,0
+Primeres,Francisco,223,161,0
+Pinya,Gal_la Genoves,193,139,0
+Crosses,Gal_la Genoves,193,139,0
+Pinya,Galicia,211,150,0
+Pinya,Garcia,211,151,0
+Pinya,Gelabert,210,152,0
+Pinya,Gemma Cid,190,139,0
+Crosses,Gemma Cid,190,139,0
+Pinya,Gemma Valls,198,140,0
+Crosses,Gemma Valls,198,140,0
+Pinya,Gerard,203,145,0
+Pinya,German,198,149,0
+Pinya,Gloria,190,135,0
+Crosses,Gloria,190,135,0
+Pinya,Guillem Pujals,198,143,0
+Pinya,Gusi,220,160,0
+Pinya,Guti,206,149,0
+Agulles,Guti,206,149,0
+Contraforts,Guti,206,149,0
+Pinya,Hector,213,152,0
+Pinya,Helena Artigas,184,134,0
+Pinya,Helena Sarda,211,147,0
+Pinya,Iban,209,151,0
+Contraforts,Iban,209,151,0
+Agulles,Iban,209,151,0
+Pinya,Ignacio,208,146,0
+Agulles,Ignacio,208,146,0
+Contraforts,Ignacio,208,146,0
+Baixos,Ignacio,208,146,0
+Pinya,Ignasi Orobitg,205,149,0
+Contraforts,Ignasi Orobitg,205,149,0
+Pinya,Irene,178,0,0
+Pinya,Isaac,219,155,0
+Pinya,JM Segura,203,147,0
+Pinya,Jambo,213,152,0
+Pinya,Jaume Arisa,206,145,0
+Contraforts,Jaume Arisa,206,145,0
+Pinya,Jaume Creus,196,145,0
+Pinya,JaumeMas,210,154,0
+Pinya,JB,204,146,0
+Pinya,Joan Carles,213,154,0
+Pinya,Joan Moya,203,141,0
+Pinya,Joan Toll,222,159,0
+Primeres,Joan Toll,222,159,0
+Pinya,Joanfe,217,155,0
+Pinya,Joaquin,197,146,0
+Pinya,Jordi Casas,214,152,0
+Pinya,Jordi Creus,215,153,0
+Pinya,Jordi Giner,200,145,0
+Pinya,Jordi Segura,201,148,0
+Baixos,Jordi Segura,201,148,0
+Pinya,Josep Perez,195,143,0
+Pinya,Josep Puigvert,200,147,0
+Pinya,Josue,206,147,0
+Pinya,Juanchi Jan,206,146,0
+Agulles,Juanchi Jan,206,146,0
+Contraforts,Juanchi Jan,206,146,0
+Baixos,Juanchi Jan,206,146,0
+Pinya,Juanma,0,0,0
+Pinya,Judit Prados,214,150,0
+Pinya,Juli,206,149,0
+Pinya,Julia,207,149,0
+Pinya,Julia,195,139,0
+Crosses,Julia,195,139,0
+Pinya,Kabaco,226,163,0
+Primeres,Kabaco,226,163,0
+Pinya,Kevin,216,150,0
+Pinya,Kiko,203,147,0
+Contraforts,Kiko,203,147,0
+Pinya,Laia,178,0,0
+Crosses,Laia,178,0,0
+Pinya,Laia Jarque,189,137,0
+Crosses,Laia Jarque,189,137,0
+Pinya,Laia Queralt,188,133,0
+Crosses,Laia Queralt,188,133,0
+Pinya,Laia Ventura,196,137,0
+Crosses,Laia Ventura,196,137,0
+Pinya,Lara,177,0,0
+Pinya,Laura,0,0,0
+Pinya,Laura Bosch,186,135,0
+Crosses,Laura Bosch,186,135,0
+Pinya,Laura Corralo,191,0,0
+Pinya,Laura Gassio,190,138,0
+Crosses,Laura Gassio,190,138,0
+Pinya,Lidia,197,136,0
+Crosses,Lidia,197,136,0
+Pinya,Lidia Perich,177,0,0
+Crosses,Lidia Perich,177,0,0
+Pinya,Llonch,229,169,0
+Primeres,Llonch,229,169,0
+Pinya,Llorens,206,147,0
+Agulles,Llorens,206,147,0
+Pinya,Lluis,197,151,0
+Pinya,Lluis Angles,194,145,0
+Pinya,Lola,187,137,0
+Crosses,Lola,187,137,0
+Pinya,Lu,188,135,0
+Crosses,Lu,188,135,0
+Pinya,Manel Dalmases,218,153,0
+Pinya,Manel Valero,218,154,0
+Pinya,Marc,210,150,0
+Pinya,Marc Querol,210,152,0
+Pinya,Marc Sansa,200,139,0
+Baixos,Marc Sansa,200,139,0
+Pinya,Maria,200,140,0
+Pinya,Maria Boixaderas,197,139,0
+Crosses,Maria Boixaderas,197,139,0
+Pinya,Maria Jose,185,132,0
+Crosses,Maria Jose,185,132,0
+Pinya,Marina,202,143,0
+Crosses,Marina,202,143,0
+Pinya,Marina Pla,205,145,0
+Pinya,Marina Sicilia,190,136,0
+Crosses,Marina Sicilia,190,136,0
+Pinya,Marina Ventura,191,135,0
+Crosses,Marina Ventura,191,135,0
+Pinya,MarinaVentura,191,135,0
+Pinya,Marta Cusido,196,139,0
+Crosses,Marta Cusido,196,139,0
+Pinya,Marta Vila,191,136,0
+Crosses,Marta Vila,191,136,0
+Pinya,Marti,208,149,0
+Agulles,Marti,208,149,0
+Contraforts,Marti,208,149,0
+Pinya,Marti Rovira,213,153,0
+Pinya,Mauricio,213,154,0
+Pinya,Maxim,213,149,0
+Pinya,Medina,222,162,0
+Primeres,Medina,222,162,0
+Pinya,Merce Iso,200,144,0
+Pinya,Michel,227,160,0
+Primeres,Michel,227,160,0
+Pinya,Mina,197,136,0
+Crosses,Mina,197,136,0
+Pinya,Miquel,200,141,0
+Pinya,Miquel Ventura,206,146,0
+Pinya,Mireia Prats,204,148,0
+Pinya,Miret,206,149,0
+Pinya,Monica,179,0,0
+Crosses,Monica,179,0,0
+Pinya,Montse Cortes,191,0,0
+Crosses,Montse Cortes,191,0,0
+Pinya,Montse Graells,205,145,0
+Pinya,Montse Rossines,198,141,0
+Crosses,Montse Rossines,198,141,0
+Pinya,Moron,206,147,0
+Agulles,Moron,206,147,0
+Contraforts,Moron,206,147,0
+Pinya,Nando,213,156,0
+Pinya,Nati,189,136,0
+Crosses,Nati,189,136,0
+Pinya,Nico,196,139,0
+Pinya,Nuria Basachs,193,137,0
+Crosses,Nuria Basachs,193,137,0
+Pinya,Nuria Benitez,195,133,0
+Crosses,Nuria Benitez,195,133,0
+Pinya,Nuria Cabrera,190,134,0
+Crosses,Nuria Cabrera,190,134,0
+Pinya,Nurins,193,137,0
+Crosses,Nurins,193,137,0
+Pinya,Octavi,201,142,0
+Pinya,Olga,200,139,0
+Agulles,Olga,200,139,0
+Crosses,Olga,200,139,0
+Pinya,Oliva,212,151,0
+Pinya,Oliver,202,144,0
+Contraforts,Oliver,202,144,0
+Baixos,Oliver,202,144,0
+Pinya,Oriol Arisa,202,143,0
+Pinya,Oriol Bausa,203,148,0
+Pinya,Oriol Benabarre,192,134,0
+Crosses,Oriol Benabarre,192,134,0
+Pinya,Oriol Creus,212,150,0
+Pinya,Oriol Ferran,200,142,0
+Pinya,Oscar Cascan,217,152,0
+Pinya,Pacorro,207,152,0
+Pinya,Palmira Gil,180,0,0
+Crosses,Palmira Gil,180,0,0
+Pinya,Pasalamar,228,165,0
+Primeres,Pasalamar,228,165,0
+Pinya,Pau Cuadrado,207,143,0
+Pinya,Pijames,207,148,0
+Agulles,Pijames,207,148,0
+Pinya,Pilar Manchon,181,136,0
+Crosses,Pilar Manchon,181,136,0
+Pinya,Pili Polo,193,138,0
+Crosses,Pili Polo,193,138,0
+Pinya,Pol,202,141,0
+Baixos,Pol,202,141,0
+Contraforts,Pol,202,141,0
+Pinya,Pol Marcet,223,155,0
+Primeres,Pol Marcet,223,155,0
+Pinya,Porta,213,150,0
+Pinya,Porxu,226,157,0
+Primeres,Porxu,226,157,0
+Pinya,Pujals,202,144,0
+Pinya,Quimet,240,170,0
+Primeres,Quimet,240,170,0
+Pinya,Ramirez,229,165,0
+Primeres,Ramirez,229,165,0
+Pinya,RamonAlemany,196,141,0
+Pinya,Ramonet,216,156,0
+Pinya,Raspall,218,161,0
+Pinya,Rene,210,150,0
+Pinya,Ricard,208,148,0
+Contraforts,Ricard,208,148,0
+Baixos,Ricard,208,148,0
+Pinya,Ricard Milian,211,146,0
+Pinya,Rosa alonso,207,147,0
+Pinya,Roser Dorda,196,140,0
+Crosses,Roser Dorda,196,140,0
+Pinya,Rossines,198,141,0
+Pinya,Safont,213,153,0
+Pinya,Salva,211,148,0
+Pinya,Sanahuja,209,150,0
+Pinya,Sanchez,203,144,0
+Baixos,Sanchez,203,144,0
+Pinya,Sandreta,178,0,0
+Pinya,Santi Argelaguet,213,152,0
+Pinya,Santi Horcas,0,0,0
+Pinya,Santiago,205,147,0
+Pinya,Sarai,189,133,0
+Pinya,Sarai Perez,184,0,0
+Crosses,Sarai Perez,184,0,0
+Pinya,Sarda,216,152,0
+Pinya,Sempere,227,162,0
+Primeres,Sempere,227,162,0
+Pinya,Sensi,191,137,0
+Crosses,Sensi,191,137,0
+Pinya,Sergi,209,150,0
+Pinya,Sergi Marcet,197,149,0
+Pinya,Silvia Jimenez,195,138,0
+Crosses,Silvia Jimenez,195,138,0
+Pinya,Silvia Simo,206,142,0
+Pinya,Spitz,202,142,0
+Pinya,Teresa Busuldu,186,0,0
+Crosses,Teresa Busuldu,186,0,0
+Pinya,Tico,227,165,0
+Primeres,Tico,227,165,0
+Pinya,Tomas,211,148,0
+Pinya,Toni,212,148,0
+Agulles,Toni,212,148,0
+Pinya,Toni Ribera,192,143,0
+Pinya,Tonyo,209,152,0
+Pinya,Tudela,216,156,0
+Pinya,Txon,215,155,0
+Pinya,Ursula,181,0,0
+Crosses,Ursula,181,0,0
+Pinya,Vicky,207,146,0
+Agulles,Vicky,207,146,0
+Pinya,Vinyas,211,148,0
+Contraforts,Vinyas,211,148,0
+Baixos,Vinyas,211,148,0
+Pinya,Xavi Aspachs,227,162,0
+Primeres,Xavi Aspachs,227,162,0
+Pinya,Xavi Lucas,219,156,0
+Pinya,Xavi Prat,234,164,0
+Primeres,Xavi Prat,234,164,0
+Pinya,Xavi Sicilia,207,147,0
+Pinya,Xenia,187,136,0
+Crosses,Xenia,187,136,0
+Pinya,Xevi,232,165,0
+Primeres,Xevi,232,165,0
+Pinya,Yeray,213,149,0
+Pinya,Yolanda,202,144,0
+Agulles,Yolanda,202,144,0
+Pinya,Yolanda Zurdo,188,136,0
+Crosses,Yolanda Zurdo,188,136,0

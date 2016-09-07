@@ -28,7 +28,7 @@ Rectangle {
                 visible: true
                 rotation: 90
 
-                Componentpeu { id: baixCarrer; anchors.verticalCenterOffset: 130; text: "B Carrer";
+                Componentpeu { id: baixCarrer; anchors.verticalCenterOffset: 130; text: "B Enx";
                     border.color: "yellow"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
@@ -46,7 +46,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: contrafortCarrer; anchors.verticalCenterOffset: 80; text: "C Carrer";
+                Componentpeu { id: contrafortCarrer; anchors.verticalCenterOffset: 80; text: "C Enx";
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
@@ -64,7 +64,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: primeresCarrer; anchors.verticalCenterOffset: 50; text: "1 Carrer";
+                Componentpeu { id: primeresCarrer; anchors.verticalCenterOffset: 50; text: "1 Enx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -81,7 +81,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: segonesCarrer; anchors.verticalCenterOffset: 20; text: "2 Carrer";
+                Componentpeu { id: segonesCarrer; anchors.verticalCenterOffset: 20; text: "2 Enx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -98,7 +98,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: terceresCarrer; anchors.verticalCenterOffset: -10; text: "3 Carrer";
+                Componentpeu { id: terceresCarrer; anchors.verticalCenterOffset: -10; text: "3 Enx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -115,7 +115,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: quartesCarrer; anchors.verticalCenterOffset: -40; text: "4 Carrer";
+                Componentpeu { id: quartesCarrer; anchors.verticalCenterOffset: -40; text: "4 Enx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -132,7 +132,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: quintesCarrer; anchors.verticalCenterOffset: -70; text: "5 Carrer";
+                Componentpeu { id: quintesCarrer; anchors.verticalCenterOffset: -70; text: "5 Enx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -149,7 +149,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: sisenesCarrer; anchors.verticalCenterOffset: -100; text: "6 Carrer";
+                Componentpeu { id: sisenesCarrer; anchors.verticalCenterOffset: -100; text: "6 Enx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -199,7 +199,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: baixBar; anchors.verticalCenterOffset: 130; text: "Baix Bar";
+                Componentpeu { id: baixBar; anchors.verticalCenterOffset: 130; text: "Baix Acotx";
                     border.color: "yellow"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
@@ -217,7 +217,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: contrafortBar; anchors.verticalCenterOffset: 80; text: "C Bar"
+                Componentpeu { id: contrafortBar; anchors.verticalCenterOffset: 80; text: "C Acotx"
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
@@ -235,7 +235,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: primeresBar; anchors.verticalCenterOffset: 50; text: "1 Bar";
+                Componentpeu { id: primeresBar; anchors.verticalCenterOffset: 50; text: "1 Acotx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -252,7 +252,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: segonesBar; anchors.verticalCenterOffset: 20; text: "2 Bar";
+                Componentpeu { id: segonesBar; anchors.verticalCenterOffset: 20; text: "2 Acotx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -269,7 +269,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: terceresBar; anchors.verticalCenterOffset: -10; text: "3 Bar";
+                Componentpeu { id: terceresBar; anchors.verticalCenterOffset: -10; text: "3 Acotx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -286,7 +286,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: quartesBar; anchors.verticalCenterOffset: -40; text: "4 Bar";
+                Componentpeu { id: quartesBar; anchors.verticalCenterOffset: -40; text: "4 Acotx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -303,7 +303,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: quintesBar; anchors.verticalCenterOffset: -70; text: "5 Bar";
+                Componentpeu { id: quintesBar; anchors.verticalCenterOffset: -70; text: "5 Acotx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -320,7 +320,7 @@ Rectangle {
                         }
                     }
                 }
-                Componentpeu { id: sisenesBar; anchors.verticalCenterOffset: -100; text: "6 Bar";
+                Componentpeu { id: sisenesBar; anchors.verticalCenterOffset: -100; text: "6 Acotx";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -2652,50 +2652,50 @@ Rectangle {
                 drag.maximumY: vistaPinya.height + 500
                 }
         }
-              Label {
-                id: labRiu
-                x: 284
-                y: 8
-                width: 59
-                height: 32
-                text: "RIU"
-                rotation: 0
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labMofu
-                x: 284
-                y: 583
-                width: 82
-                height: 32
-                text: "MOFU"
-                rotation: 0
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labCarrer
-                x: 621
-                y: 295
-                rotation: 90
-                width: 100
-                height: 32
-                text: "CARRER"
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labBar
-                x: -13
-                y: 207
-                rotation: 270
-                width: 59
-                height: 32
-                text: "BAR"
-                font.pointSize: 20
-                font.bold: true
-            }
+//              Label {
+//                id: labRiu
+//                x: 284
+//                y: 8
+//                width: 59
+//                height: 32
+//                text: "RIU"
+//                rotation: 0
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labMofu
+//                x: 284
+//                y: 583
+//                width: 82
+//                height: 32
+//                text: "MOFU"
+//                rotation: 0
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labCarrer
+//                x: 621
+//                y: 295
+//                rotation: 90
+//                width: 100
+//                height: 32
+//                text: "CARRER"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labBar
+//                x: -13
+//                y: 207
+//                rotation: 270
+//                width: 59
+//                height: 32
+//                text: "BAR"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
         }
 
 

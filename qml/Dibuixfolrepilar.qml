@@ -29,7 +29,7 @@ Rectangle {
                 visible: true
                 rotation: 90
 
-                Posicio { id: segonCarrer; x: 0; y: 383; anchors.verticalCenterOffset: 45; text: "2n Carrer";
+                Posicio { id: segonCarrer; x: 0; y: 383; anchors.verticalCenterOffset: 45; text: "2n Davant";
                     border.color: "yellow"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
@@ -48,7 +48,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresCarrer; x: 0; y: 350; anchors.verticalCenterOffset: 15; text: "1 Carrer";
+                Posicio { id: primeresCarrer; x: 0; y: 350; anchors.verticalCenterOffset: 15; text: "1 Davant";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -65,7 +65,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesCarrer; x: 0; y: 318; anchors.verticalCenterOffset: -15; text: "2 Carrer";
+                Posicio { id: segonesCarrer; x: 0; y: 318; anchors.verticalCenterOffset: -15; text: "2 Davant";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -82,7 +82,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresCarrer; x: 0; y: 284; anchors.verticalCenterOffset: -45; text: "3 Carrer";
+                Posicio { id: terceresCarrer; x: 0; y: 284; anchors.verticalCenterOffset: -45; text: "3 Davant";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -132,7 +132,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonBar; anchors.verticalCenterOffset: 45; text: "2n Bar";
+                Posicio { id: segonBar; anchors.verticalCenterOffset: 45; text: "2n Pilar";
                     border.color: "yellow"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
@@ -150,7 +150,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: contrafortBar; anchors.verticalCenterOffset: 15; text: "C Bar"
+                Posicio { id: contrafortBar; anchors.verticalCenterOffset: 15; text: "C Pilar"
                     border.color: "#ffa800"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
@@ -168,7 +168,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresBar; anchors.verticalCenterOffset: -15; text: "1 Bar";
+                Posicio { id: primeresBar; anchors.verticalCenterOffset: -15; text: "1 Darrere";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -185,7 +185,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesBar; anchors.verticalCenterOffset: -45; text: "2 Bar";
+                Posicio { id: segonesBar; anchors.verticalCenterOffset: -45; text: "2 Darrere";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -202,7 +202,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresBar; anchors.verticalCenterOffset: -75; text: "3 Bar";
+                Posicio { id: terceresBar; anchors.verticalCenterOffset: -75; text: "3 Darrere";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
@@ -591,48 +591,48 @@ Rectangle {
                 drag.maximumY: vistaPinya.height + 500
             }
         }
-               Label {
-                id: labRiu
-                x: 179
-                y: 8
-                width: 59
-                height: 32
-                text: "RIU"
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labMofu
-                x: 156
-                y: 284
-                width: 82
-                height: 32
-                text: "MOFU"
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labCarrer
-                x: 364
-                y: 144
-                rotation: 90
-                width: 100
-                height: 32
-                text: "CARRER"
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labBar
-                x: 10
-                y: 143
-                rotation: 270
-                width: 59
-                height: 32
-                text: "BAR"
-                font.pointSize: 20
-                font.bold: true
-            }
+//               Label {
+//                id: labRiu
+//                x: 179
+//                y: 8
+//                width: 59
+//                height: 32
+//                text: "RIU"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labMofu
+//                x: 156
+//                y: 284
+//                width: 82
+//                height: 32
+//                text: "MOFU"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labCarrer
+//                x: 364
+//                y: 144
+//                rotation: 90
+//                width: 100
+//                height: 32
+//                text: "CARRER"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labBar
+//                x: 10
+//                y: 143
+//                rotation: 270
+//                width: 59
+//                height: 32
+//                text: "BAR"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
         }
 
     }

@@ -73,5 +73,6 @@
         <file>qml/delete2.svg</file>
         <file>qml/save.svg</file>
         <file>qml/import.svg</file>
+        <file>qml/font_size_more.svg</file>
     </qresource>
 </RCC>

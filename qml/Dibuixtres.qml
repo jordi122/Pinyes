@@ -2642,51 +2642,51 @@ Rectangle {
                 drag.maximumY: vistaPinya.height + 500
                 }
         }
-             Label {
-                id: labRiu
-                x: 559
-                y: 420
-                width: 59
-                height: 32
-                text: "RIU"
-                rotation: 90
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labMofu
-                x: -26
-                y: 418
-                width: 82
-                height: 32
-                text: "MOFU"
-                z: 0
-                rotation: 270
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labCarrer
-                x: 251
-                y: 668
-                rotation: 0
-                width: 100
-                height: 32
-                text: "CARRER"
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labBar
-                x: 331
-                y: 13
-                rotation: 0
-                width: 59
-                height: 32
-                text: "BAR"
-                font.pointSize: 20
-                font.bold: true
-            }
+//             Label {
+//                id: labRiu
+//                x: 559
+//                y: 420
+//                width: 59
+//                height: 32
+//                text: "RIU"
+//                rotation: 90
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labMofu
+//                x: -26
+//                y: 418
+//                width: 82
+//                height: 32
+//                text: "MOFU"
+//                z: 0
+//                rotation: 270
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labCarrer
+//                x: 251
+//                y: 668
+//                rotation: 0
+//                width: 100
+//                height: 32
+//                text: "CARRER"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labBar
+//                x: 331
+//                y: 13
+//                rotation: 0
+//                width: 59
+//                height: 32
+//                text: "BAR"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
         }
 
 

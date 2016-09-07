@@ -59,10 +59,10 @@ ApplicationWindow {
                 text: styleData.value
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
-                visible: !styleData.selected
+                //visible: !styleData.selected
             }
         }
-    }
+   }
     Component {
         id: rowDelegateCastells
         Rectangle {
@@ -80,8 +80,8 @@ ApplicationWindow {
                 anchors.fill: parent
                 text: styleData.value
                 color: "white"
-                font.pointSize: midaLletra + 4
-                font.capitalization: Font.AllUppercase
+                font.pointSize: midaLletra + 2
+                //font.capitalization: Font.AllUppercase
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
             }
@@ -443,13 +443,14 @@ ApplicationWindow {
             anchors.top: parent.top
             anchors.left: parent.left
             itemName: "Taula Castellers"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaTaula
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesataula.trigger()
             }
         }
@@ -460,13 +461,14 @@ ApplicationWindow {
             anchors.top: itemMenuTaula.bottom
             anchors.left: parent.left
             itemName: "Pilar"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaPilar
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesapilar.trigger()
             }
         }
@@ -477,13 +479,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.top: itemMenuPilar.bottom
             itemName: "Torre"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaTorre
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesatorre.trigger()
             }
         }
@@ -494,13 +497,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.right: parent.right
             itemName: "Tres"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaTres
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesatres.trigger()
             }
         }
@@ -511,30 +515,32 @@ ApplicationWindow {
             anchors.right: parent.right
             anchors.left: parent.left
             itemName: "Quatre"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaQuatre
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesaquatre.trigger()
             }
         }
 
         ItemMenu {
             id: itemMenuQuatrea
-            anchors.top: itemMenuTres.bottom
+            anchors.top: itemMenuQuatre.bottom
             anchors.right: parent.right
             anchors.left: parent.left
-            itemName: "Quatre"
+            itemName: "Quatre + Pilar"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaQuatrea
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesaquatrea.trigger()
             }
         }
@@ -542,16 +548,17 @@ ApplicationWindow {
         ItemMenu {
             id: itemMenuCinc
             anchors.right: parent.right
-            anchors.top: itemMenuQuatre.bottom
+            anchors.top: itemMenuQuatrea.bottom
             anchors.left: parent.left
             itemName: "Cinc"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaCinc
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesacinc.trigger()
             }
         }
@@ -562,13 +569,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.top: itemMenuCinc.bottom
             itemName: "Set"
+            color: "#70788d"
             MouseArea {
                 id: clickableAreaSet
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesaset.trigger()
             }
         }
@@ -579,13 +587,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.right: parent.right
             itemName: "Soca Pilar"
+            color: "#70788d"
             MouseArea {
                 id: clickableSPilar
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesapeupilar.trigger()
             }
         }
@@ -596,13 +605,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.top: itemMenuSocaPilar.bottom
             itemName: "Folre Pilar"
+            color: "#70788d"
             MouseArea {
                 id: clickableFPilar
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesafolrepilar.trigger()
             }
         }
@@ -613,13 +623,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.right: parent.right
             itemName: "Soca Torre"
+            color: "#70788d"
             MouseArea {
                 id: clickableSTorre
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesapeutorre.trigger()
             }
         }
@@ -630,13 +641,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.top: itemMenuSocaTorre8.bottom
             itemName: "Folre Torre"
+            color: "#70788d"
             MouseArea {
                 id: clickableFTorre
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesafolretorre.trigger()
             }
         }
@@ -647,13 +659,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.right: parent.right
             itemName: "Soca Tres"
+            color: "#70788d"
             MouseArea {
                 id: clickableSTres
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesapeutres.trigger()
             }
         }
@@ -664,13 +677,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.top: itemMenuSocaTres.bottom
             itemName: "Folre Tres"
+            color: "#70788d"
             MouseArea {
                 id: clickableFTres
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesafolretres.trigger()
             }
         }
@@ -681,13 +695,14 @@ ApplicationWindow {
             anchors.left: parent.left
             anchors.right: parent.right
             itemName: "Soca Quatre"
+            color: "#70788d"
             MouseArea {
                 id: clickableSQuatre
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesapeuquatre.trigger()
             }
         }
@@ -699,13 +714,14 @@ ApplicationWindow {
             anchors.top: itemMenuSocaQuatre.bottom
             anchors.bottom: parent.bottom
             itemName: "Folre Quatre"
+            color: "#70788d"
             MouseArea {
                 id: clickableFQuatre
                 anchors.fill: parent
                 onPressed: parent.color = "#2b2e37"
-                onReleased: parent.color = "#353945"
+                onReleased: parent.color = "#70788d"
                 onEntered: parent.color = "#2b2e37"
-                onExited: parent.color = "#353945"
+                onExited: parent.color = "#70788d"
                 onClicked: vesafolrequatre.trigger()
             }
         }
@@ -1016,8 +1032,8 @@ ApplicationWindow {
             width: 220
             height: 120
             border.width: 2
-            border.color: "red"
-            color: "beige"
+            border.color: "black"
+            color: "#e9edf3"
 
             Rectangle {
                 id: embolcalltext_pinya1
@@ -1026,7 +1042,7 @@ ApplicationWindow {
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: 150
                 height: 20
-                color: "#57cc3f"
+                color: "#ccd6e5"
                 border.color: "#000000"
                 TextInput {
                     id: text_pinya1
@@ -1034,6 +1050,7 @@ ApplicationWindow {
                     cursorPosition: 0
                     cursorVisible: true
                     anchors.fill: parent
+                    anchors.leftMargin: 5
                     text: "Anomena la pinya"
                     onFocusChanged: {
                         if (text==="Anomena la pinya") {
@@ -1280,7 +1297,7 @@ ApplicationWindow {
 
     Action {
         id: exportaImatge
-        text: "Exporta imatge...(Escriptori)"
+        text: "Exporta imatge...(No mobil)"
         onTriggered: {
             if(OSdetails.getOSName() === "WINDOWS" || OSdetails.getOSName() === "OSX" || OSdetails.getOSName() === "LINUX") {
                 principal.visibility = Window.Maximized

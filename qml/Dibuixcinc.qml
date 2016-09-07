@@ -2675,25 +2675,25 @@ Rectangle {
                 pinch.minimumScale: 0.1
                 pinch.maximumScale: 10
                 onPinchFinished: {
-                            vistaPinya.width = 700 * vistaPinya.scale
-                            vistaPinya.height =700 * vistaPinya.scale
-                        }
-
-            MouseArea {
-                anchors.fill: parent
-                anchors.rightMargin: -100
-                anchors.bottomMargin: -100
-                anchors.leftMargin: -100
-                anchors.topMargin: -100
-                drag.target: vistaPinya
-                drag.axis: Drag.XAndYAxis
-                drag.minimumX: 0
-                drag.minimumY: 0
-                drag.maximumX: vistaPinya.width + 500
-                drag.maximumY: vistaPinya.height + 500
+                    vistaPinya.width = 700 * vistaPinya.scale
+                    vistaPinya.height =700 * vistaPinya.scale
                 }
-        }
-              Label {
+
+                MouseArea {
+                    anchors.fill: parent
+                    anchors.rightMargin: -100
+                    anchors.bottomMargin: -100
+                    anchors.leftMargin: -100
+                    anchors.topMargin: -100
+                    drag.target: vistaPinya
+                    drag.axis: Drag.XAndYAxis
+                    drag.minimumX: 0
+                    drag.minimumY: 0
+                    drag.maximumX: vistaPinya.width + 500
+                    drag.maximumY: vistaPinya.height + 500
+                }
+            }
+            /*Label {
                 id: labRiu
                 x: 343
                 y: 16
@@ -2734,7 +2734,7 @@ Rectangle {
                 text: "BAR"
                 font.pointSize: 20
                 font.bold: true
-            }
+            }*/
         }
 
     }

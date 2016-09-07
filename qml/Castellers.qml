@@ -237,7 +237,7 @@ Rectangle {
                     text: styleData.value
                     color: "white"
                     font.pointSize: midaLletra + 4
-                    font.capitalization: Font.AllUppercase
+                   // font.capitalization: Font.AllUppercase
                     horizontalAlignment: Text.AlignLeft
                     verticalAlignment: Text.AlignVCenter
                 }

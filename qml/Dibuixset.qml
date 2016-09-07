@@ -18,23 +18,23 @@ Rectangle {
             width:700
             color: "transparent"
 
-            /*********Bar***********/
+            /*********Rengla***********/
             Rectangle {
-                id: bar
+                id: rengla
                 x:260; y:329
                 width: 50
                 height: 150
                 color: "#305050"
                 z: 2
                 visible: true
-                Posicio { id: agullaBar; x: 1; y: 173; anchors.verticalCenterOffset: 60; text: "A Bar";
+                Posicio { id: agullaRengla; x: 1; y: 173; anchors.verticalCenterOffset: 60; text: "A Rengla";
                     border.color: "red"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("agullaBar",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("agullaRengla",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -45,7 +45,7 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: baixBar; x: -1; y: 145; anchors.verticalCenterOffset: 30; text: "B Bar";
+                Posicio { id: baixRengla; x: -1; y: 145; anchors.verticalCenterOffset: 30; text: "B Rengla";
                     border.color: "yellow"
 
                     onButtonClick: {
@@ -53,7 +53,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("baixBar",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("baixRengla",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -64,14 +64,14 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: contrafortBar; x: 0; y: 111; anchors.verticalCenterOffset: 0; text: "C Bar";
+                Posicio { id: contrafortRengla; x: 0; y: 111; anchors.verticalCenterOffset: 0; text: "C Rengla";
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("contrafortBar",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("contrafortRengla",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -82,13 +82,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresBar; x: 0; y: 82; anchors.verticalCenterOffset: -30; text: "1 Bar";
+                Posicio { id: primeresRengla; x: 0; y: 82; anchors.verticalCenterOffset: -30; text: "1 Rengla";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("primeresBar",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("primeresRengla",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -99,13 +99,13 @@ Rectangle {
                         }
                     }
                 }
-                /*Posicio { id: segonesBar; x: 1; y: 53; anchors.verticalCenterOffset: -60; text: "2 Bar";
+                /*Posicio { id: segonesRengla; x: 1; y: 53; anchors.verticalCenterOffset: -60; text: "2 Rengla";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("segonesBar",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("segonesRengla",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -117,25 +117,25 @@ Rectangle {
                     }
                 }*/
             }
-            /**********FI BAR*****************/
+            /**********FI Rengla*****************/
 
-            /*********BAR-SET***********/
+            /*********BUIDA-SET***********/
             Rectangle {
-                id: barSet
+                id: buidaSet
                 x:260; y:11
                 width: 50
                 height: 270
                 color: "#305050"
                 z: 2
                 visible: true
-                Posicio { id: agullaBarSet; anchors.verticalCenterOffset: 120; text: "A BarSet";
+                Posicio { id: agullaBuidaSet; anchors.verticalCenterOffset: 120; text: "A BuidaSet";
                     border.color: "red"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("agullaBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("agullaBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -146,7 +146,7 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: baixBarSet; anchors.verticalCenterOffset: 90; text: "B BarSet";
+                Posicio { id: baixBuidaSet; anchors.verticalCenterOffset: 90; text: "B BuidaSet";
                     border.color: "yellow"
 
                     onButtonClick: {
@@ -154,7 +154,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("baixBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("baixBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -165,14 +165,14 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: contrafortBarSet; anchors.verticalCenterOffset: 60; text: "C BarSet";
+                Posicio { id: contrafortBuidaSet; anchors.verticalCenterOffset: 60; text: "C BuidaSet";
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("contrafortBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("contrafortBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -183,13 +183,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresBarSet; anchors.verticalCenterOffset: 30; text: "1 BarSet";
+                Posicio { id: primeresBuidaSet; anchors.verticalCenterOffset: 30; text: "1 BuidaSet";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("primeresBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("primeresBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -200,13 +200,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesBarSet; anchors.verticalCenterOffset: 0; text: "2 BarSet";
+                Posicio { id: segonesBuidaSet; anchors.verticalCenterOffset: 0; text: "2 BuidaSet";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("segonesBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("segonesBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -217,13 +217,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresBarSet; anchors.verticalCenterOffset: -30; text: "3 BarSet";
+                Posicio { id: terceresBuidaSet; anchors.verticalCenterOffset: -30; text: "3 BuidaSet";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("terceresBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("terceresBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -234,13 +234,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quartesBarSet; anchors.verticalCenterOffset: -60; text: "4 BarSet";
+                Posicio { id: quartesBuidaSet; anchors.verticalCenterOffset: -60; text: "4 BuidaSet";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quartesBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quartesBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -251,13 +251,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quintesBarSet; anchors.verticalCenterOffset: -90; text: "5 BarSet";
+                Posicio { id: quintesBuidaSet; anchors.verticalCenterOffset: -90; text: "5 BuidaSet";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quintesBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quintesBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -268,13 +268,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: sisenesBarSet; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 BarSet";
+                Posicio { id: sisenesBuidaSet; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 BuidaSet";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("sisenesBarSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("sisenesBuidaSet",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -286,11 +286,11 @@ Rectangle {
                     }
                 }
             }
-            /**********FI BAR-SET*****************/
+            /**********FI BUIDA-SET*****************/
 
-            /*********MOFU***********/
+            /*********SUPERPLENA***********/
             Rectangle {
-                id: mofu
+                id: sPlena
                 rotation: 270
                 x:105; y:366
                 width: 50
@@ -298,14 +298,14 @@ Rectangle {
                 color: "#305050"
                 z: 2
                 visible: true
-                Posicio { id: agullaMofu; anchors.verticalCenterOffset: 120; text: "A Mofu";
+                Posicio { id: agullasPlena; anchors.verticalCenterOffset: 120; text: "A sPlena";
                     border.color: "red"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("agullaMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("agullasPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -317,7 +317,7 @@ Rectangle {
                     }
                 }
 
-                Posicio { id: baixMofu; anchors.verticalCenterOffset: 90; text: "B Mofu";
+                Posicio { id: baixsPlena; anchors.verticalCenterOffset: 90; text: "B sPlena";
                     border.color: "yellow"
 
                     onButtonClick: {
@@ -325,7 +325,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("baixMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("baixsPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -336,14 +336,14 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: contrafortMofu; anchors.verticalCenterOffset: 60; text: "C Mofu";
+                Posicio { id: contrafortsPlena; anchors.verticalCenterOffset: 60; text: "C sPlena";
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("contrafortMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("contrafortsPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -354,13 +354,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresMofu; anchors.verticalCenterOffset: 30; text: "1 Mofu";
+                Posicio { id: primeressPlena; anchors.verticalCenterOffset: 30; text: "1 sPlena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("primeresMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("primeressPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -371,13 +371,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesMofu; anchors.verticalCenterOffset: 0; text: "2 Mofu";
+                Posicio { id: segonessPlena; anchors.verticalCenterOffset: 0; text: "2 sPlena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("segonesMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("segonessPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -388,13 +388,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresMofu; anchors.verticalCenterOffset: -30; text: "3 Mofu";
+                Posicio { id: terceressPlena; anchors.verticalCenterOffset: -30; text: "3 sPlena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("terceresMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("terceressPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -405,13 +405,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quartesMofu; anchors.verticalCenterOffset: -60; text: "4 Mofu";
+                Posicio { id: quartessPlena; anchors.verticalCenterOffset: -60; text: "4 sPlena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quartesMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quartessPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -422,13 +422,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quintesMofu; anchors.verticalCenterOffset: -90; text: "5 Mofu";
+                Posicio { id: quintessPlena; anchors.verticalCenterOffset: -90; text: "5 sPlena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quintesMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quintessPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -439,13 +439,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: sisenesMofu; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 Mofu";
+                Posicio { id: sisenessPlena; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 sPlena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("sisenesMofu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("sisenessPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -457,11 +457,11 @@ Rectangle {
                     }
                 }
             }
-            /**********FI MOFU*****************/
+            /**********FI SUPERPLENA*****************/
 
-            /*********MOFU-SET***********/
+            /*********PLENA1-SET***********/
             Rectangle {
-                id: mofuSet
+                id: plena1Set
                 rotation: 270
                 x:105; y:166
                 width: 50
@@ -469,14 +469,14 @@ Rectangle {
                 color: "#305050"
                 z: 2
                 visible: true
-                Posicio { id: agullaMofuSet; anchors.verticalCenterOffset: 120; text: "A MofuSet";
+                Posicio { id: agullaPlena1Set; anchors.verticalCenterOffset: 120; text: "A Plena1Set";
                     border.color: "red"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("agullaMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("agullaPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -488,7 +488,7 @@ Rectangle {
                     }
                 }
 
-                Posicio { id: baixMofuSet; anchors.verticalCenterOffset: 90; text: "B MofuSet";
+                Posicio { id: baixPlena1Set; anchors.verticalCenterOffset: 90; text: "B Plena1Set";
                     border.color: "yellow"
 
                     onButtonClick: {
@@ -496,7 +496,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("baixMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("baixPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -507,14 +507,14 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: contrafortMofuSet; anchors.verticalCenterOffset: 60; text: "C MofuSet";
+                Posicio { id: contrafortPlena1Set; anchors.verticalCenterOffset: 60; text: "C Plena1Set";
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("contrafortMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("contrafortPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -525,13 +525,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresMofuSet; anchors.verticalCenterOffset: 30; text: "1 MofuSet";
+                Posicio { id: primeresPlena1Set; anchors.verticalCenterOffset: 30; text: "1 Plena1Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("primeresMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("primeresPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -542,13 +542,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesMofuSet; anchors.verticalCenterOffset: 0; text: "2 MofuSet";
+                Posicio { id: segonesPlena1Set; anchors.verticalCenterOffset: 0; text: "2 Plena1Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("segonesMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("segonesPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -559,13 +559,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresMofuSet; anchors.verticalCenterOffset: -30; text: "3 MofuSet";
+                Posicio { id: terceresPlena1Set; anchors.verticalCenterOffset: -30; text: "3 Plena1Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("terceresMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("terceresPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -576,13 +576,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quartesMofuSet; anchors.verticalCenterOffset: -60; text: "4 MofuSet";
+                Posicio { id: quartesPlena1Set; anchors.verticalCenterOffset: -60; text: "4 Plena1Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quartesMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quartesPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -593,13 +593,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quintesMofuSet; anchors.verticalCenterOffset: -90; text: "5 MofuSet";
+                Posicio { id: quintesPlena1Set; anchors.verticalCenterOffset: -90; text: "5 Plena1Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quintesMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quintesPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -610,13 +610,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: sisenesMofuSet; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 MofuSet";
+                Posicio { id: sisenesPlena1Set; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 Plena1Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("sisenesMofuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("sisenesPlena1Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -628,12 +628,12 @@ Rectangle {
                     }
                 }
             }
-            /**********FI MOFU-SET*****************/
+            /**********FI PLENA1-SET*****************/
 
 
-            /********RIU*************************/
+            /********PLENA*************************/
             Rectangle {
-                id: riu
+                id: plena
                 x:420; y:366
                 width: 50
                 height: 270
@@ -641,14 +641,14 @@ Rectangle {
                 z: 2
                 rotation: 90
                 visible: true
-                Posicio { id: agullaRiu; anchors.verticalCenterOffset: 120; text: "A Riu";
+                Posicio { id: agullaPlena; anchors.verticalCenterOffset: 120; text: "A Plena";
                     border.color: "red"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("agullaRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("agullaPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -659,7 +659,7 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: baixRiu; anchors.verticalCenterOffset: 90; text: "B Riu";
+                Posicio { id: baixPlena; anchors.verticalCenterOffset: 90; text: "B Plena";
                     border.color: "yellow"
 
                     onButtonClick: {
@@ -667,7 +667,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("baixRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("baixPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -678,14 +678,14 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: contrafortRiu; anchors.verticalCenterOffset: 60; text: "C Riu";
+                Posicio { id: contrafortPlena; anchors.verticalCenterOffset: 60; text: "C Plena";
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("contrafortRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("contrafortPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -696,13 +696,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresRiu; anchors.verticalCenterOffset: 30; text: "1 Riu";
+                Posicio { id: primeresPlena; anchors.verticalCenterOffset: 30; text: "1 Plena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("primeresRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("primeresPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -713,13 +713,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesRiu; anchors.verticalCenterOffset: 0; text: "2 Riu";
+                Posicio { id: segonesPlena; anchors.verticalCenterOffset: 0; text: "2 Plena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("segonesRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("segonesPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -730,13 +730,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresRiu; anchors.verticalCenterOffset: -30; text: "3 Riu";
+                Posicio { id: terceresPlena; anchors.verticalCenterOffset: -30; text: "3 Plena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("terceresRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("terceresPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -747,13 +747,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quartesRiu; anchors.verticalCenterOffset: -60; text: "4 Riu";
+                Posicio { id: quartesPlena; anchors.verticalCenterOffset: -60; text: "4 Plena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quartesRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quartesPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -764,13 +764,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quintesRiu; anchors.verticalCenterOffset: -90; text: "5 Riu";
+                Posicio { id: quintesPlena; anchors.verticalCenterOffset: -90; text: "5 Plena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quintesRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quintesPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -781,13 +781,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: sisenesRiu; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 Riu";
+                Posicio { id: sisenesPlena; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 Plena";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("sisenesRiu",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("sisenesPlena",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -799,11 +799,11 @@ Rectangle {
                     }
                 }
             }
-            /**********************FI RIU***************/
+            /**********************FI Plena***************/
 
-            /********RIU-SET*************************/
+            /********PLENA2-SET*************************/
             Rectangle {
-                id: riuSet
+                id: plena2Set
                 x:420; y:166
                 width: 50
                 height: 270
@@ -811,14 +811,14 @@ Rectangle {
                 z: 2
                 rotation: 90
                 visible: true
-                Posicio { id: agullaRiuSet; anchors.verticalCenterOffset: 120; text: "A RiuSet";
+                Posicio { id: agullaPlena2Set; anchors.verticalCenterOffset: 120; text: "A Plena2Set";
                     border.color: "red"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("agullaRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("agullaPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -829,7 +829,7 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: baixRiuSet; anchors.verticalCenterOffset: 90; text: "B RiuSet";
+                Posicio { id: baixPlena2Set; anchors.verticalCenterOffset: 90; text: "B Plena2Set";
                     border.color: "yellow"
 
                     onButtonClick: {
@@ -837,7 +837,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("baixRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("baixPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -848,14 +848,14 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: contrafortRiuSet; anchors.verticalCenterOffset: 60; text: "C RiuSet";
+                Posicio { id: contrafortPlena2Set; anchors.verticalCenterOffset: 60; text: "C Plena2Set";
                     border.color: "orange"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("contrafortRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("contrafortPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -866,13 +866,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresRiuSet; anchors.verticalCenterOffset: 30; text: "1 RiuSet";
+                Posicio { id: primeresPlena2Set; anchors.verticalCenterOffset: 30; text: "1 Plena2Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("primeresRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("primeresPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -883,13 +883,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesRiuSet; anchors.verticalCenterOffset: 0; text: "2 RiuSet";
+                Posicio { id: segonesPlena2Set; anchors.verticalCenterOffset: 0; text: "2 Plena2Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("segonesRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("segonesPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -900,13 +900,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresRiuSet; anchors.verticalCenterOffset: -30; text: "3 RiuSet";
+                Posicio { id: terceresPlena2Set; anchors.verticalCenterOffset: -30; text: "3 Plena2Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("terceresRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("terceresPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -917,13 +917,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quartesRiuSet; anchors.verticalCenterOffset: -60; text: "4 RiuSet";
+                Posicio { id: quartesPlena2Set; anchors.verticalCenterOffset: -60; text: "4 Plena2Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quartesRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quartesPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -934,13 +934,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quintesRiuSet; anchors.verticalCenterOffset: -90; text: "5 RiuSet";
+                Posicio { id: quintesPlena2Set; anchors.verticalCenterOffset: -90; text: "5 Plena2Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quintesRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quintesPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -951,13 +951,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: sisenesRiuSet; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 RiuSet";
+                Posicio { id: sisenesPlena2Set; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 Plena2Set";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("sisenesRiuSet",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("sisenesPlena2Set",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -969,11 +969,11 @@ Rectangle {
                     }
                 }
             }
-            /**********************FI RIU***************/
+            /**********************FI PLENA2-SET***************/
 
-            /*********Carrer***********/
+            /*********BUIDA***********/
             Rectangle {
-                id: carrer
+                id: buida
                 x:260; y:518
                 width: 50
                 height: 270
@@ -981,7 +981,7 @@ Rectangle {
                 z: 2
                 rotation: 180
                 visible: true
-                Posicio { id: agullaCarrer; anchors.verticalCenterOffset: 120; text: "A Carrer";
+                Posicio { id: agullaBuida; anchors.verticalCenterOffset: 120; text: "A Buida";
                     border.color: "red"
                     rotation: 180
                     onButtonClick: {
@@ -989,7 +989,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("agullaCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("agullaBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1000,7 +1000,7 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: baixCarrer; anchors.verticalCenterOffset: 90; text: "B Carrer";
+                Posicio { id: baixBuida; anchors.verticalCenterOffset: 90; text: "B Buida";
                     border.color: "yellow"
                     rotation: 180
                     onButtonClick: {
@@ -1008,7 +1008,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("baixCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("baixBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1019,7 +1019,7 @@ Rectangle {
                         };
                     }
                 }
-                Posicio { id: contrafortCarrer; anchors.verticalCenterOffset: 60; text: "C Carrer";
+                Posicio { id: contrafortBuida; anchors.verticalCenterOffset: 60; text: "C Buida";
                     border.color: "orange"
                     rotation: 180
                     onButtonClick: {
@@ -1027,7 +1027,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("contrafortCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("contrafortBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1038,14 +1038,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: primeresCarrer; anchors.verticalCenterOffset: 30; text: "1 Carrer";
+                Posicio { id: primeresBuida; anchors.verticalCenterOffset: 30; text: "1 Buida";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("primeresCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("primeresBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1056,14 +1056,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: segonesCarrer; anchors.verticalCenterOffset: 0; text: "2 Carrer";
+                Posicio { id: segonesBuida; anchors.verticalCenterOffset: 0; text: "2 Buida";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("segonesCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("segonesBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1074,14 +1074,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: terceresCarrer; anchors.verticalCenterOffset: -30; text: "3 Carrer";
+                Posicio { id: terceresBuida; anchors.verticalCenterOffset: -30; text: "3 Buida";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("terceresCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("terceresBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1092,14 +1092,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quartesCarrer; anchors.verticalCenterOffset: -60; text: "4 Carrer";
+                Posicio { id: quartesBuida; anchors.verticalCenterOffset: -60; text: "4 Buida";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quartesCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quartesBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1110,14 +1110,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: quintesCarrer; anchors.verticalCenterOffset: -90; text: "5 Carrer";
+                Posicio { id: quintesBuida; anchors.verticalCenterOffset: -90; text: "5 Buida";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("quintesCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("quintesBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1128,14 +1128,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: sisenesCarrer; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 Carrer";
+                Posicio { id: sisenesBuida; x: 0; y: 0; anchors.verticalCenterOffset: -120; text: "6 Buida";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("sisenesCarrer",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("sisenesBuida",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1147,11 +1147,11 @@ Rectangle {
                     }
                 }
             }
-            /**********FI Carrer*****************/
+            /**********FI Buida*****************/
 
-            /********LATERALS ESQUERRA Bar**********/
+            /********LATERALS ESQUERRA RENGLA**********/
             Rectangle {
-                id: latEsqBar
+                id: latEsqRengla
                 x:402; y:310
                 width: 50
                 height: 180
@@ -1159,13 +1159,13 @@ Rectangle {
                 rotation: 90
                 visible: true
                 z : 2
-                Posicio { id: latEsqBar1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latEsqRengla1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBar1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqRengla1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1176,13 +1176,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBar2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latEsqRengla2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBar2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqRengla2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1193,13 +1193,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBar3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latEsqRengla3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBar3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqRengla3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1210,13 +1210,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBar4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latEsqRengla4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBar4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqRengla4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1227,13 +1227,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBar5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latEsqRengla5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBar5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqRengla5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1244,13 +1244,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBar6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latEsqRengla6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBar6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqRengla6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1262,24 +1262,24 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS ESQUERRA Bar*****/
+            /*****FI LATERALS ESQUERRA Rengla*****/
 
-            /********LATERALS ESQUERRA BarSet**********/
+            /********LATERALS ESQUERRA BuidaSet**********/
             Rectangle {
-                id: latEsqBarSet
+                id: latEsqBuidaSet
                 x:340; y:7
                 width: 50
                 height: 180
                 color: "#1a1871"
                 rotation: 20
                 visible: true
-                Posicio { id: latEsqBarSet1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latEsqBuidaSet1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBarSet1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuidaSet1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1290,13 +1290,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBarSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latEsqBuidaSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBarSet2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuidaSet2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1307,13 +1307,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBarSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latEsqBuidaSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBarSet3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuidaSet3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1324,13 +1324,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBarSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latEsqBuidaSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBarSet4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuidaSet4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1341,13 +1341,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBarSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latEsqBuidaSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBarSet5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuidaSet5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1358,13 +1358,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqBarSet6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latEsqBuidaSet6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqBarSet6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuidaSet6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1376,11 +1376,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS ESQUERRA BarSet*****/
+            /*****FI LATERALS ESQUERRA BuidaSet*****/
 
-            /********LATERALS DRETA Riu**********/
+            /********LATERALS DRETA PLENA**********/
             Rectangle {
-                id: latDretRiu
+                id: latDretPlena
                 x:460; y:333
                 width: 50
                 height: 180
@@ -1388,13 +1388,13 @@ Rectangle {
                 z: 1
                 rotation: 70
                 visible: true
-                Posicio { id: latDretRiu1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latDretPlena1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiu1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1405,13 +1405,13 @@ Rectangle {
                         }
                     }
                 }
-                /*Posicio { id: latDretRiu2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                /*Posicio { id: latDretPlena2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiu2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1422,13 +1422,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiu3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latDretPlena3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiu3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1439,13 +1439,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiu4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latDretPlena4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiu4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1456,13 +1456,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiu5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latDretPlena5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiu5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1473,13 +1473,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiu6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latDretPlena6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiu6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1491,11 +1491,11 @@ Rectangle {
                     }
                 }*/
             }
-            /*****FI LATERALS DRETA Riu*****/
+            /*****FI LATERALS DRETA Plena*****/
 
-            /********LATERALS DRETA RiuSet**********/
+            /********LATERALS DRETA Plena2Set**********/
             Rectangle {
-                id: latDretRiuSet
+                id: latDretPlena2Set
                 x:460; y:133
                 width: 50
                 height: 180
@@ -1503,13 +1503,13 @@ Rectangle {
                 z: 1
                 rotation: 70
                 visible: true
-                Posicio { id: latDretRiuSet1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latDretPlena2Set1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiuSet1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena2Set1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1520,13 +1520,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiuSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latDretPlena2Set2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiuSet2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena2Set2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1537,13 +1537,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiuSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latDretPlena2Set3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiuSet3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena2Set3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1554,13 +1554,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiuSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latDretPlena2Set4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiuSet4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena2Set4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1571,13 +1571,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiuSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latDretPlena2Set5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiuSet5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena2Set5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1588,13 +1588,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretRiuSet6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latDretPlena2Set6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretRiuSet6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena2Set6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1606,11 +1606,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS DRETA RiuSet*****/
+            /*****FI LATERALS DRETA Plena2Set*****/
 
-            /********LATERALS ESQUERRA Riu**********/
+            /********LATERALS ESQUERRA Plena**********/
             Rectangle {
-                id: latEsqRiu
+                id: latEsqPlena
                 x:460; y:490
                 width: 50
                 height: 180
@@ -1618,14 +1618,14 @@ Rectangle {
                 z: 1
                 rotation: 110
                 visible: true
-                Posicio { id: latEsqRiu1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latEsqPlena1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiu1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1636,14 +1636,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiu2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latEsqPlena2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiu2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1654,14 +1654,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiu3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latEsqPlena3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiu3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1672,14 +1672,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiu4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latEsqPlena4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiu4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1690,14 +1690,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiu5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latEsqPlena5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiu5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1708,14 +1708,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiu6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latEsqPlena6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiu6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1727,11 +1727,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS ESQUERRA Riu*****/
+            /*****FI LATERALS ESQUERRA Plena*****/
 
-            /********LATERALS ESQUERRA RiuSet**********/
+            /********LATERALS ESQUERRA Plena2Set**********/
             Rectangle {
-                id: latEsqRiuSet
+                id: latEsqPlena2Set
                 x:460; y:290
                 width: 50
                 height: 180
@@ -1739,13 +1739,13 @@ Rectangle {
                 z: 1
                 rotation: 110
                 visible: true
-                Posicio { id: latEsqRiuSet1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latEsqPlena2Set1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiuSet1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena2Set1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1756,13 +1756,13 @@ Rectangle {
                         }
                     }
                 }
-                /*Posicio { id: latEsqRiuSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                /*Posicio { id: latEsqPlena2Set2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiuSet2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena2Set2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1773,13 +1773,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiuSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latEsqPlena2Set3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiuSet3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena2Set3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1790,13 +1790,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiuSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latEsqPlena2Set4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiuSet4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena2Set4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1807,13 +1807,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiuSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latEsqPlena2Set5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiuSet5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena2Set5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1824,13 +1824,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqRiuSet6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latEsqPlena2Set6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqRiuSet6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena2Set6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1842,11 +1842,11 @@ Rectangle {
                     }
                 }*/
             }
-            /*****FI LATERALS ESQUERRA RiuSet*****/
+            /*****FI LATERALS ESQUERRA Plena2Set*****/
 
-            /********LATERALS DRETA Carrer**********/
+            /********LATERALS DRETA Buida**********/
             Rectangle {
-                id: latDretCarrer
+                id: latDretBuida
                 x:340; y:607
                 width: 50
                 height: 180
@@ -1854,14 +1854,14 @@ Rectangle {
                 z: 1
                 rotation: 160
                 visible: true
-                Posicio { id: latDretCarrer1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latDretBuida1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretCarrer1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuida1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1872,14 +1872,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretCarrer2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latDretBuida2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretCarrer2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuida2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1890,14 +1890,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretCarrer3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latDretBuida3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretCarrer3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuida3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1908,14 +1908,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretCarrer4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latDretBuida4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretCarrer4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuida4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1926,14 +1926,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretCarrer5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latDretBuida5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretCarrer5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuida5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1944,14 +1944,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretCarrer6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latDretBuida6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretCarrer6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuida6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1963,10 +1963,10 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS DRETA Carrer*****/
-            /********LATERALS ESQUERRA Carrer**********/
+            /*****FI LATERALS DRETA Buida*****/
+            /********LATERALS ESQUERRA Buida**********/
             Rectangle {
-                id: latEsqCarrer
+                id: latEsqBuida
                 x:180; y:607
                 width: 50
                 height: 180
@@ -1974,14 +1974,14 @@ Rectangle {
                 z: 1
                 rotation: 200
                 visible: true
-                Posicio { id: latEsqCarrer1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latEsqBuida1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqCarrer1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuida1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -1992,14 +1992,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqCarrer2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latEsqBuida2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqCarrer2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuida2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2010,14 +2010,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqCarrer3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latEsqBuida3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqCarrer3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuida3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2028,14 +2028,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqCarrer4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latEsqBuida4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqCarrer4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuida4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2046,14 +2046,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqCarrer5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latEsqBuida5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqCarrer5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuida5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2064,14 +2064,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqCarrer6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latEsqBuida6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqCarrer6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqBuida6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2083,11 +2083,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS ESQUERRA Carrer*****/
+            /*****FI LATERALS ESQUERRA Buida*****/
 
-            /********LATERALS DRETA Mofu**********/
+            /********LATERALS DRETA SUPERPLENA**********/
             Rectangle {
-                id: latDretMofu
+                id: latDretsPlena
                 x:55; y:491
                 width: 50
                 height: 180
@@ -2095,14 +2095,14 @@ Rectangle {
                 z: 1
                 rotation: 250
                 visible: true
-                Posicio { id: latDretMofu1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latDretsPlena1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofu1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretsPlena1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2113,14 +2113,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofu2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latDretsPlena2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofu2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretsPlena2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2131,14 +2131,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofu3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latDretsPlena3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofu3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretsPlena3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2149,14 +2149,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofu4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latDretsPlena4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofu4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretsPlena4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2167,14 +2167,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofu5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latDretsPlena5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofu5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretsPlena5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2185,14 +2185,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofu6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latDretsPlena6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofu6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretsPlena6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2204,10 +2204,10 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS DRETA Mofu *****/
-            /********LATERALS ESQUERRA Mofu**********/
+            /*****FI LATERALS DRETA sPlena *****/
+            /********LATERALS ESQUERRA sPlena**********/
             Rectangle {
-                id: latEsqMofu
+                id: latEsqsPlena
                 x:70; y:332
                 width: 50
                 height: 180
@@ -2215,13 +2215,13 @@ Rectangle {
                 z: 1
                 rotation: 290
                 visible: true
-                Posicio { id: latEsqMofu1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latEsqsPlena1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofu1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqsPlena1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2232,13 +2232,13 @@ Rectangle {
                         }
                     }
                 }
-                /*Posicio { id: latEsqMofu2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                /*Posicio { id: latEsqsPlena2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofu2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqsPlena2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2249,13 +2249,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofu3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latEsqsPlena3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofu3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqsPlena3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2266,13 +2266,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofu4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latEsqsPlena4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofu4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqsPlena4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2283,13 +2283,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofu5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latEsqsPlena5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofu5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqsPlena5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2300,13 +2300,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofu6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latEsqsPlena6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofu6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqsPlena6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2318,11 +2318,11 @@ Rectangle {
                     }
                 }*/
             }
-            /*****FI LATERALS ESQUERRA Mofu *****/
+            /*****FI LATERALS ESQUERRA sPlena *****/
 
-            /********LATERALS DRETA MofuSet**********/
+            /********LATERALS DRETA Plena1Set**********/
             Rectangle {
-                id: latDretMofuSet
+                id: latDretPlena1Set
                 x:55; y:291
                 width: 50
                 height: 180
@@ -2330,13 +2330,13 @@ Rectangle {
                 z: 1
                 rotation: 250
                 visible: true
-                Posicio { id: latDretMofuSet1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latDretPlena1Set1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofuSet1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena1Set1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2347,13 +2347,13 @@ Rectangle {
                         }
                     }
                 }
-                /*Posicio { id: latDretMofuSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                /*Posicio { id: latDretPlena1Set2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofuSet2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena1Set2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2364,13 +2364,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofuSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latDretPlena1Set3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofuSet3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena1Set3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2381,13 +2381,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofuSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latDretPlena1Set4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofuSet4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena1Set4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2398,13 +2398,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofuSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latDretPlena1Set5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofuSet5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena1Set5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2415,13 +2415,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretMofuSet6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latDretPlena1Set6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretMofuSet6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretPlena1Set6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2433,10 +2433,10 @@ Rectangle {
                     }
                 }*/
             }
-            /*****FI LATERALS DRETA MofuSet *****/
-            /********LATERALS ESQUERRA MofuSet**********/
+            /*****FI LATERALS DRETA Plena1Set *****/
+            /********LATERALS ESQUERRA Plena1Set**********/
             Rectangle {
-                id: latEsqMofuSet
+                id: latEsqPlena1Set
                 x:70; y:132
                 width: 50
                 height: 180
@@ -2444,13 +2444,13 @@ Rectangle {
                 z: 1
                 rotation: 290
                 visible: true
-                Posicio { id: latEsqMofuSet1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latEsqPlena1Set1; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofuSet1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena1Set1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2461,13 +2461,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofuSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latEsqPlena1Set2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofuSet2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena1Set2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2478,13 +2478,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofuSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latEsqPlena1Set3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofuSet3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena1Set3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2495,13 +2495,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofuSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latEsqPlena1Set4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofuSet4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena1Set4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2512,13 +2512,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofuSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latEsqPlena1Set5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofuSet5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena1Set5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2529,13 +2529,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latEsqMofuSet6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latEsqPlena1Set6; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latEsqMofuSet6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latEsqPlena1Set6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2547,11 +2547,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS ESQUERRA MofuSet *****/
+            /*****FI LATERALS ESQUERRA Plena1Set *****/
 
-            /********LATERALS DRETA Bar*******/
+            /********LATERALS DRETA Rengla*******/
             Rectangle {
-                id: latDretBar
+                id: latDretRengla
                 x:117; y:310
                 width: 50
                 height: 180
@@ -2559,13 +2559,13 @@ Rectangle {
                 rotation: 270
                 visible: true
                 z : 2
-                Posicio { id: latDretBar1; x: 0; y: 155; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latDretRengla1; x: 0; y: 155; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBar1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretRengla1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2576,13 +2576,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBar2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latDretRengla2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBar2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretRengla2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2593,13 +2593,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBar3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latDretRengla3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBar3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretRengla3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2610,13 +2610,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBar4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latDretRengla4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBar4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretRengla4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2627,13 +2627,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBar5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latDretRengla5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBar5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretRengla5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2644,13 +2644,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBar6; x: 0; y: 0; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latDretRengla6; x: 0; y: 0; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBar6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretRengla6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2662,11 +2662,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS DRETA Bar*****/
+            /*****FI LATERALS DRETA Rengla*****/
 
-            /********LATERALS DRETA BarSet*******/
+            /********LATERALS DRETA BuidaSet*******/
             Rectangle {
-                id: latDretBarSet
+                id: latDretBuidaSet
                 x:180; y:7
                 width: 50
                 height: 180
@@ -2674,13 +2674,13 @@ Rectangle {
                 z: 1
                 rotation: -20
                 visible: true
-                Posicio { id: latDretBarSet1; x: 0; y: 155; anchors.verticalCenterOffset: 80; text: "Lateral 1";
+                Posicio { id: latDretBuidaSet1; x: 0; y: 155; anchors.verticalCenterOffset: 80; text: "Lateral 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBarSet1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuidaSet1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2691,13 +2691,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBarSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
+                Posicio { id: latDretBuidaSet2; anchors.verticalCenterOffset: 50; text: "Lateral 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBarSet2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuidaSet2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2708,13 +2708,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBarSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
+                Posicio { id: latDretBuidaSet3; anchors.verticalCenterOffset: 20; text: "Lateral 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBarSet3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuidaSet3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2725,13 +2725,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBarSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
+                Posicio { id: latDretBuidaSet4; anchors.verticalCenterOffset: -10; text: "Lateral 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBarSet4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuidaSet4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2742,13 +2742,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBarSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
+                Posicio { id: latDretBuidaSet5; anchors.verticalCenterOffset: -40; text: "Lateral 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBarSet5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuidaSet5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2759,13 +2759,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: latDretBarSet6; x: 0; y: 0; anchors.verticalCenterOffset: -70; text: "Lateral 6";
+                Posicio { id: latDretBuidaSet6; x: 0; y: 0; anchors.verticalCenterOffset: -70; text: "Lateral 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("latDretBarSet6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("latDretBuidaSet6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2777,11 +2777,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI LATERALS DRETA BarSet*****/
+            /*****FI LATERALS DRETA BuidaSet*****/
 
-            /********VENTS Bar(Esquerra)*******/
+            /********VENTS Rengla(Esquerra)*******/
             Rectangle {
-                id: ventBar
+                id: ventRengla
                 x:390; y:84
                 width: 50
                 height: 175
@@ -2789,13 +2789,13 @@ Rectangle {
                 z: 1
                 rotation: 45
                 visible: true
-                Posicio { id: ventBar1; anchors.verticalCenterOffset: 75; text: "Vent 1";
+                Posicio { id: ventRengla1; anchors.verticalCenterOffset: 75; text: "Vent 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventBar1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventRengla1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2806,13 +2806,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventBar2; anchors.verticalCenterOffset: 45; text: "Vent 2";
+                Posicio { id: ventRengla2; anchors.verticalCenterOffset: 45; text: "Vent 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventBar2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventRengla2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2823,13 +2823,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventBar3; anchors.verticalCenterOffset: 15; text: "Vent 3";
+                Posicio { id: ventRengla3; anchors.verticalCenterOffset: 15; text: "Vent 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventBar3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventRengla3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2840,13 +2840,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventBar4; anchors.verticalCenterOffset: -15; text: "Vent 4";
+                Posicio { id: ventRengla4; anchors.verticalCenterOffset: -15; text: "Vent 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventBar4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventRengla4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2857,13 +2857,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventBar5; anchors.verticalCenterOffset: -45; text: "Vent 5";
+                Posicio { id: ventRengla5; anchors.verticalCenterOffset: -45; text: "Vent 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventBar5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventRengla5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2874,13 +2874,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventBar6; anchors.verticalCenterOffset: -75; text: "Vent 6";
+                Posicio { id: ventRengla6; anchors.verticalCenterOffset: -75; text: "Vent 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventBar6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventRengla6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2892,10 +2892,10 @@ Rectangle {
                     }
                 }
             }
-            /*****FI VENTS Bar(Esquerra)*****/
-            /********VENTS Riu(Esquerra)*******/
+            /*****FI VENTS Rengla(Esquerra)*****/
+            /********VENTS Plena(Esquerra)*******/
             Rectangle {
-                id: ventRiu
+                id: ventPlena
                 x:390; y:543
                 width: 50
                 height: 175
@@ -2903,14 +2903,14 @@ Rectangle {
                 z: 1
                 rotation: 135
                 visible: true
-                Posicio { id: ventRiu1; anchors.verticalCenterOffset: 75; text: "Vent 1";
+                Posicio { id: ventPlena1; anchors.verticalCenterOffset: 75; text: "Vent 1";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventRiu1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventPlena1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2921,14 +2921,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventRiu2; anchors.verticalCenterOffset: 45; text: "Vent 2";
+                Posicio { id: ventPlena2; anchors.verticalCenterOffset: 45; text: "Vent 2";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventRiu2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventPlena2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2939,14 +2939,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventRiu3; anchors.verticalCenterOffset: 15; text: "Vent 3";
+                Posicio { id: ventPlena3; anchors.verticalCenterOffset: 15; text: "Vent 3";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventRiu3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventPlena3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2957,14 +2957,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventRiu4; anchors.verticalCenterOffset: -15; text: "Vent 4";
+                Posicio { id: ventPlena4; anchors.verticalCenterOffset: -15; text: "Vent 4";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventRiu4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventPlena4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2975,14 +2975,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventRiu5; anchors.verticalCenterOffset: -45; text: "Vent 5";
+                Posicio { id: ventPlena5; anchors.verticalCenterOffset: -45; text: "Vent 5";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventRiu5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventPlena5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -2993,14 +2993,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventRiu6; anchors.verticalCenterOffset: -75; text: "Vent 6";
+                Posicio { id: ventPlena6; anchors.verticalCenterOffset: -75; text: "Vent 6";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventRiu6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventPlena6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3012,10 +3012,10 @@ Rectangle {
                     }
                 }
             }
-            /*****FI VENTS Riu(Esquerra)*****/
-            /********VENTS Carrer(Esquerra)*******/
+            /*****FI VENTS Plena(Esquerra)*****/
+            /********VENTS Buida(Esquerra)*******/
             Rectangle {
-                id: ventCarrer
+                id: ventBuida
                 x:130; y:543
                 width: 50
                 height: 175
@@ -3023,14 +3023,14 @@ Rectangle {
                 z: 1
                 rotation: 225
                 visible: true
-                Posicio { id: ventCarrer1; anchors.verticalCenterOffset: 75; text: "Vent 1";
+                Posicio { id: ventBuida1; anchors.verticalCenterOffset: 75; text: "Vent 1";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventCarrer1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventBuida1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3041,14 +3041,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventCarrer2; anchors.verticalCenterOffset: 45; text: "Vent 2";
+                Posicio { id: ventBuida2; anchors.verticalCenterOffset: 45; text: "Vent 2";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventCarrer2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventBuida2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3059,14 +3059,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventCarrer3; anchors.verticalCenterOffset: 15; text: "Vent 3";
+                Posicio { id: ventBuida3; anchors.verticalCenterOffset: 15; text: "Vent 3";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventCarrer3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventBuida3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3077,14 +3077,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventCarrer4; anchors.verticalCenterOffset: -15; text: "Vent 4";
+                Posicio { id: ventBuida4; anchors.verticalCenterOffset: -15; text: "Vent 4";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventCarrer4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventBuida4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3095,14 +3095,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventCarrer5; anchors.verticalCenterOffset: -45; text: "Vent 5";
+                Posicio { id: ventBuida5; anchors.verticalCenterOffset: -45; text: "Vent 5";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventCarrer5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventBuida5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3113,14 +3113,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventCarrer6; anchors.verticalCenterOffset: -75; text: "Vent 6";
+                Posicio { id: ventBuida6; anchors.verticalCenterOffset: -75; text: "Vent 6";
                     rotation: 180
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventCarrer6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventBuida6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3132,11 +3132,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI VENTS Carrer(Esquerra)*****/
+            /*****FI VENTS Buida(Esquerra)*****/
 
-            /********VENTS Mofu(Esquerra)*******/
+            /********VENTS sPlena(Esquerra)*******/
             Rectangle {
-                id: ventMofu
+                id: ventsPlena
                 x:130; y:81
                 width: 50
                 height: 175
@@ -3144,13 +3144,13 @@ Rectangle {
                 z: 1
                 rotation: 315
                 visible: true
-                Posicio { id: ventMofu1; anchors.verticalCenterOffset: 75; text: "Vent 1";
+                Posicio { id: ventsPlena1; anchors.verticalCenterOffset: 75; text: "Vent 1";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventMofu1",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventsPlena1",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3161,13 +3161,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventMofu2; anchors.verticalCenterOffset: 45; text: "Vent 2";
+                Posicio { id: ventsPlena2; anchors.verticalCenterOffset: 45; text: "Vent 2";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventMofu2",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventsPlena2",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3178,13 +3178,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventMofu3; anchors.verticalCenterOffset: 15; text: "Vent 3";
+                Posicio { id: ventsPlena3; anchors.verticalCenterOffset: 15; text: "Vent 3";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventMofu3",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventsPlena3",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3195,13 +3195,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventMofu4; anchors.verticalCenterOffset: -15; text: "Vent 4";
+                Posicio { id: ventsPlena4; anchors.verticalCenterOffset: -15; text: "Vent 4";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventMofu4",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventsPlena4",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3212,13 +3212,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventMofu5; anchors.verticalCenterOffset: -45; text: "Vent 5";
+                Posicio { id: ventsPlena5; anchors.verticalCenterOffset: -45; text: "Vent 5";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventMofu5",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventsPlena5",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3229,13 +3229,13 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: ventMofu6; anchors.verticalCenterOffset: -75; text: "Vent 6";
+                Posicio { id: ventsPlena6; anchors.verticalCenterOffset: -75; text: "Vent 6";
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("ventMofu6",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("ventsPlena6",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3247,11 +3247,11 @@ Rectangle {
                     }
                 }
             }
-            /*****FI VENTS Mofu(Esquerra)*****/
+            /*****FI VENTS sPlena(Esquerra)*****/
 
-            /*******CROSSES Bar********/
+            /*******CROSSES Rengla********/
             Rectangle {
-                id: crossesBar
+                id: crossesRengla
                 x:260; y:375
                 width: 50
                 height: 100
@@ -3259,14 +3259,14 @@ Rectangle {
                 z: 1
                 visible: true
                 rotation: 90
-                Posicio { id: crossaBarE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
+                Posicio { id: crossaRenglaE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaBarE",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaRenglaE",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3277,14 +3277,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: crossaBarD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
+                Posicio { id: crossaRenglaD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaBarD",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaRenglaD",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3296,10 +3296,10 @@ Rectangle {
                     }
                 }
             }
-            /*******FI CROSSES Bar********/
-            /*******CROSSES Riu********/
+            /*******FI CROSSES Rengla********/
+            /*******CROSSES Plena********/
             Rectangle {
-                id: crossesRiu
+                id: crossesPlena
                 rotation: 180
                 x:340; y:450
                 width: 50
@@ -3307,7 +3307,7 @@ Rectangle {
                 color: "#536a2e"
                 z: 1
                 visible: true
-                Posicio { id: crossaRiuE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
+                Posicio { id: crossaPlenaE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
                     border.color: "lightcoral"
                     rotation: 180
                     onButtonClick: {
@@ -3315,7 +3315,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaRiuE",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaPlenaE",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3326,7 +3326,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: crossaRiuD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
+                Posicio { id: crossaPlenaD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
                     border.color: "lightcoral"
                     rotation: 180
                     onButtonClick: {
@@ -3334,7 +3334,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaRiuD",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaPlenaD",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3346,11 +3346,11 @@ Rectangle {
                     }
                 }
             }
-            /*******FI CROSSES Riu********/
+            /*******FI CROSSES Plena********/
 
-            /*******CROSSES BarSet********/
+            /*******CROSSES BuidaSet********/
             Rectangle {
-                id: crossesBarSet
+                id: crossesBuidaSet
                 x:260; y:175
                 width: 50
                 height: 100
@@ -3358,14 +3358,14 @@ Rectangle {
                 z: 1
                 visible: true
                 rotation: 90
-                Posicio { id: crossaBarSetE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
+                Posicio { id: crossaBuidaSetE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaBarSetE",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaBuidaSetE",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3376,14 +3376,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: crossaBarSetD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
+                Posicio { id: crossaBuidaSetD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaBarSetD",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaBuidaSetD",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3395,10 +3395,10 @@ Rectangle {
                     }
                 }
             }
-            /*******FI CROSSES BarSet********/
-            /*******CROSSES RiuSet********/
+            /*******FI CROSSES BuidaSet********/
+            /*******CROSSES Plena2Set********/
             Rectangle {
-                id: crossesRiuSet
+                id: crossesPlena2Set
                 rotation: 180
                 x:340; y:250
                 width: 50
@@ -3406,7 +3406,7 @@ Rectangle {
                 color: "#556b2f"
                 z: 1
                 visible: true
-                Posicio { id: crossaRiuSetE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
+                Posicio { id: crossaPlena2SetE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
                     border.color: "lightcoral"
                     rotation: 180
                     onButtonClick: {
@@ -3414,7 +3414,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaRiuSetE",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaPlena2SetE",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3425,7 +3425,7 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: crossaRiuSetD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
+                Posicio { id: crossaPlena2SetD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
                     border.color: "lightcoral"
                     rotation: 180
                     onButtonClick: {
@@ -3433,7 +3433,7 @@ Rectangle {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaRiuSetD",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaPlena2SetD",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3445,11 +3445,11 @@ Rectangle {
                     }
                 }
             }
-            /*******FI CROSSES RiuSet********/
+            /*******FI CROSSES Plena2Set********/
 
-            /*******CROSSES Carrer********/
+            /*******CROSSES Buida********/
             Rectangle {
-                id: crossesCarrer
+                id: crossesBuida
                 rotation: 270
                 x:260; y:525
                 width: 50
@@ -3457,14 +3457,14 @@ Rectangle {
                 color: "#536a2e"
                 z: 1
                 visible: true
-                Posicio { id: crossaCarrerE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
+                Posicio { id: crossaBuidaE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaCarrerE",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaBuidaE",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3475,14 +3475,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: crossaCarrerD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
+                Posicio { id: crossaBuidaD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaCarrerD",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaBuidaD",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3494,10 +3494,10 @@ Rectangle {
                     }
                 }
             }
-            /*******FI CROSSES Carrer********/
-            /*******CROSSES Mofu set********/
+            /*******FI CROSSES Buida********/
+            /*******CROSSES sPlena set********/
             Rectangle {
-                id: crossesMofuSet
+                id: crossesPlena1Set
                 rotation: 0
                 x:185; y:250
                 width: 50
@@ -3505,14 +3505,14 @@ Rectangle {
                 color: "#536a2e"
                 z: 1
                 visible: true
-                Posicio { id: crossaMofuSetE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
+                Posicio { id: crossaPlena1SetE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaMofuSetE",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaPlena1SetE",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3523,14 +3523,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: crossaMofuSetD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
+                Posicio { id: crossaPlena1SetD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaMofuSetD",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossaPlena1SetD",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3542,10 +3542,10 @@ Rectangle {
                     }
                 }
             }
-            /*******FI CROSSES MofuSet********/
-            /*******CROSSES Mofu********/
+            /*******FI CROSSES Plena1Set********/
+            /*******CROSSES sPlena********/
             Rectangle {
-                id: crossesMofu
+                id: crossessPlena
                 rotation: 0
                 x:185; y:450
                 width: 50
@@ -3553,14 +3553,14 @@ Rectangle {
                 color: "#536a2e"
                 z: 1
                 visible: true
-                Posicio { id: crossaMofuE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
+                Posicio { id: crossasPlenaE; x: 0; y: 149; anchors.verticalCenterOffset: 40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaMofuE",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossasPlenaE",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3571,14 +3571,14 @@ Rectangle {
                         }
                     }
                 }
-                Posicio { id: crossaMofuD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
+                Posicio { id: crossasPlenaD; x: 0; y: 0; anchors.verticalCenterOffset: -40; text: "Crossa";
                     border.color: "lightcoral"
                     onButtonClick: {
                         if (nomComponent !="insertat") {
                             if (text !="") {
                                 list_viewsetComp.model.remove(indexTaula)
 
-                                AccionsBD.insertarRegistreaPinya("crossaMofuD",text,taulaActual);}
+                                AccionsBD.insertarRegistreaPinya("crossasPlenaD",text,taulaActual);}
                             nomComponent = "insertat"
                             indexTaula = -1
                         }}
@@ -3590,7 +3590,7 @@ Rectangle {
                     }
                 }
             }
-            /*******FI CROSSES Mofu********/
+            /*******FI CROSSES sPlena********/
             PinchArea {
                 anchors.rightMargin: -100
                 anchors.bottomMargin: -100
@@ -3621,51 +3621,51 @@ Rectangle {
                 drag.maximumY: vistaPinya.height + 500
                 }
         }
-             Label {
-                id: labRiu
-                x: 605
-                y: 384
-                width: 59
-                height: 32
-                text: "RIU"
-                rotation: 90
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labMofu
-                x: -23
-                y: 357
-                width: 82
-                height: 32
-                text: "MOFU"
-                z: 2
-                rotation: 270
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labCarrer
-                x: 156
-                y: 773
-                rotation: 0
-                width: 100
-                height: 32
-                text: "CARRER"
-                font.pointSize: 20
-                font.bold: true
-            }
-            Label {
-                id: labBar
-                x: 310
-                y: 0
-                rotation: 0
-                width: 59
-                height: 32
-                text: "BAR"
-                font.pointSize: 20
-                font.bold: true
-            }
+//             Label {
+//                id: labRiu
+//                x: 605
+//                y: 384
+//                width: 59
+//                height: 32
+//                text: "RIU"
+//                rotation: 90
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labMofu
+//                x: -23
+//                y: 357
+//                width: 82
+//                height: 32
+//                text: "MOFU"
+//                z: 2
+//                rotation: 270
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labCarrer
+//                x: 156
+//                y: 773
+//                rotation: 0
+//                width: 100
+//                height: 32
+//                text: "CARRER"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
+//            Label {
+//                id: labBar
+//                x: 310
+//                y: 0
+//                rotation: 0
+//                width: 59
+//                height: 32
+//                text: "BAR"
+//                font.pointSize: 20
+//                font.bold: true
+//            }
         }
 
 
@@ -3687,218 +3687,218 @@ Rectangle {
             width: 30
             onClicked: {
                 AccionsBD.netejarTaula("seti")
-                agullaBar.text = ""
-                agullaRiu.text = ""
-                agullaCarrer.text = ""
-                agullaMofu.text = ""
+                agullaRengla.text = ""
+                agullaPlena.text = ""
+                agullaBuida.text = ""
+                agullasPlena.text = ""
 
-                agullaBarSet.text = ""
-                agullaRiuSet.text = ""
-                agullaMofuSet.text = ""
+                agullaBuidaSet.text = ""
+                agullaPlena2Set.text = ""
+                agullaPlena1Set.text = ""
 
-                baixRiu.text = ""
-                baixCarrer.text = ""
-                baixBar.text = ""
-                baixMofu.text = ""
+                baixPlena.text = ""
+                baixBuida.text = ""
+                baixRengla.text = ""
+                baixsPlena.text = ""
 
-                baixRiuSet.text = ""
-                baixBarSet.text = ""
-                baixMofuSet.text = ""
+                baixPlena2Set.text = ""
+                baixBuidaSet.text = ""
+                baixPlena1Set.text = ""
 
-                contrafortRiu.text = ""
-                contrafortCarrer.text = ""
-                contrafortBar.text = ""
-                contrafortMofu.text = ""
+                contrafortPlena.text = ""
+                contrafortBuida.text = ""
+                contrafortRengla.text = ""
+                contrafortsPlena.text = ""
 
-                contrafortRiuSet.text = ""
-                contrafortBarSet.text = ""
-                contrafortMofuSet.text = ""
+                contrafortPlena2Set.text = ""
+                contrafortBuidaSet.text = ""
+                contrafortPlena1Set.text = ""
 
-                primeresRiu.text = ""
-                primeresCarrer.text = ""
-                primeresBar.text = ""
-                primeresMofu.text = ""
+                primeresPlena.text = ""
+                primeresBuida.text = ""
+                primeresRengla.text = ""
+                primeressPlena.text = ""
 
-                primeresRiuSet.text = ""
-                primeresBarSet.text = ""
-                primeresMofuSet.text = ""
+                primeresPlena2Set.text = ""
+                primeresBuidaSet.text = ""
+                primeresPlena1Set.text = ""
 
-                segonesRiu.text = ""
-                segonesCarrer.text = ""
-                //segonesBar.text = ""
-                segonesMofu.text = ""
+                segonesPlena.text = ""
+                segonesBuida.text = ""
+                //segonesRengla.text = ""
+                segonessPlena.text = ""
 
-                segonesRiuSet.text = ""
-                segonesBarSet.text = ""
-                segonesMofuSet.text = ""
+                segonesPlena2Set.text = ""
+                segonesBuidaSet.text = ""
+                segonesPlena1Set.text = ""
 
-                terceresRiu.text = ""
-                terceresCarrer.text = ""
-                //terceresBar.text = ""
-                terceresMofu.text = ""
+                terceresPlena.text = ""
+                terceresBuida.text = ""
+                //terceresRengla.text = ""
+                terceressPlena.text = ""
 
-                terceresRiuSet.text = ""
-                terceresBarSet.text = ""
-                terceresMofuSet.text = ""
+                terceresPlena2Set.text = ""
+                terceresBuidaSet.text = ""
+                terceresPlena1Set.text = ""
 
-                quartesRiu.text = ""
-                quartesCarrer.text = ""
-                //quartesBar.text = ""
-                quartesMofu.text = ""
+                quartesPlena.text = ""
+                quartesBuida.text = ""
+                //quartesRengla.text = ""
+                quartessPlena.text = ""
 
-                quartesRiuSet.text = ""
-                quartesBarSet.text = ""
-                quartesMofuSet.text = ""
+                quartesPlena2Set.text = ""
+                quartesBuidaSet.text = ""
+                quartesPlena1Set.text = ""
 
-                quintesRiu.text = ""
-                quintesCarrer.text = ""
-                //quintesBar.text = ""
-                quintesMofu.text = ""
+                quintesPlena.text = ""
+                quintesBuida.text = ""
+                //quintesRengla.text = ""
+                quintessPlena.text = ""
 
-                quintesRiuSet.text = ""
-                quintesBarSet.text = ""
-                quintesMofuSet.text = ""
+                quintesPlena2Set.text = ""
+                quintesBuidaSet.text = ""
+                quintesPlena1Set.text = ""
 
-                sisenesRiu.text = ""
-                sisenesCarrer.text = ""
-                //sisenesBar.text = ""
-                sisenesMofu.text = ""
+                sisenesPlena.text = ""
+                sisenesBuida.text = ""
+                //sisenesRengla.text = ""
+                sisenessPlena.text = ""
 
-                sisenesRiuSet.text = ""
-                sisenesBarSet.text = ""
-                sisenesMofuSet.text = ""
+                sisenesPlena2Set.text = ""
+                sisenesBuidaSet.text = ""
+                sisenesPlena1Set.text = ""
 
-                crossaRiuD.text = ""
-                crossaRiuE.text = ""
-                crossaCarrerD.text = ""
-                crossaCarrerE.text = ""
-                crossaBarD.text = ""
-                crossaBarE.text = ""
-                crossaMofuD.text = ""
-                crossaMofuE.text = ""
+                crossaPlenaD.text = ""
+                crossaPlenaE.text = ""
+                crossaBuidaD.text = ""
+                crossaBuidaE.text = ""
+                crossaRenglaD.text = ""
+                crossaRenglaE.text = ""
+                crossasPlenaD.text = ""
+                crossasPlenaE.text = ""
 
-                crossaRiuSetD.text = ""
-                crossaRiuSetE.text = ""
-                crossaBarSetD.text = ""
-                crossaBarSetE.text = ""
-                crossaMofuSetD.text = ""
-                crossaMofuSetE.text = ""
+                crossaPlena2SetD.text = ""
+                crossaPlena2SetE.text = ""
+                crossaBuidaSetD.text = ""
+                crossaBuidaSetE.text = ""
+                crossaPlena1SetD.text = ""
+                crossaPlena1SetE.text = ""
 
-                latDretRiu1.text = ""
-                /*latDretRiu2.text = ""
-                latDretRiu3.text = ""
-                latDretRiu4.text = ""
-                latDretRiu5.text = ""
-                latDretRiu6.text = ""*/
-                latEsqRiu1.text = ""
-                latEsqRiu2.text = ""
-                latEsqRiu3.text = ""
-                latEsqRiu4.text = ""
-                latEsqRiu5.text = ""
-                latEsqRiu6.text = ""
+                latDretPlena1.text = ""
+                /*latDretPlena2.text = ""
+                latDretPlena3.text = ""
+                latDretPlena4.text = ""
+                latDretPlena5.text = ""
+                latDretPlena6.text = ""*/
+                latEsqPlena1.text = ""
+                latEsqPlena2.text = ""
+                latEsqPlena3.text = ""
+                latEsqPlena4.text = ""
+                latEsqPlena5.text = ""
+                latEsqPlena6.text = ""
 
-                latDretRiuSet1.text = ""
-                latDretRiuSet2.text = ""
-                latDretRiuSet3.text = ""
-                latDretRiuSet4.text = ""
-                latDretRiuSet5.text = ""
-                latDretRiuSet6.text = ""
-                latEsqRiuSet1.text = ""
-                /*latEsqRiuSet2.text = ""
-                latEsqRiuSet3.text = ""
-                latEsqRiuSet4.text = ""
-                latEsqRiuSet5.text = ""
-                latEsqRiuSet6.text = ""*/
+                latDretPlena2Set1.text = ""
+                latDretPlena2Set2.text = ""
+                latDretPlena2Set3.text = ""
+                latDretPlena2Set4.text = ""
+                latDretPlena2Set5.text = ""
+                latDretPlena2Set6.text = ""
+                latEsqPlena2Set1.text = ""
+                /*latEsqPlena2Set2.text = ""
+                latEsqPlena2Set3.text = ""
+                latEsqPlena2Set4.text = ""
+                latEsqPlena2Set5.text = ""
+                latEsqPlena2Set6.text = ""*/
 
-                latDretCarrer1.text = ""
-                latDretCarrer2.text = ""
-                latDretCarrer3.text = ""
-                latDretCarrer4.text = ""
-                latDretCarrer5.text = ""
-                latDretCarrer6.text = ""
-                latEsqCarrer1.text = ""
-                latEsqCarrer2.text = ""
-                latEsqCarrer3.text = ""
-                latEsqCarrer4.text = ""
-                latEsqCarrer5.text = ""
-                latEsqCarrer6.text = ""
+                latDretBuida1.text = ""
+                latDretBuida2.text = ""
+                latDretBuida3.text = ""
+                latDretBuida4.text = ""
+                latDretBuida5.text = ""
+                latDretBuida6.text = ""
+                latEsqBuida1.text = ""
+                latEsqBuida2.text = ""
+                latEsqBuida3.text = ""
+                latEsqBuida4.text = ""
+                latEsqBuida5.text = ""
+                latEsqBuida6.text = ""
 
-                latDretBar1.text = ""
-                latDretBar2.text = ""
-                latDretBar3.text = ""
-                latDretBar4.text = ""
-                latDretBar5.text = ""
-                latDretBar6.text = ""
-                latEsqBar1.text = ""
-                latEsqBar2.text = ""
-                latEsqBar3.text = ""
-                latEsqBar4.text = ""
-                latEsqBar5.text = ""
-                latEsqBar6.text = ""
+                latDretRengla1.text = ""
+                latDretRengla2.text = ""
+                latDretRengla3.text = ""
+                latDretRengla4.text = ""
+                latDretRengla5.text = ""
+                latDretRengla6.text = ""
+                latEsqRengla1.text = ""
+                latEsqRengla2.text = ""
+                latEsqRengla3.text = ""
+                latEsqRengla4.text = ""
+                latEsqRengla5.text = ""
+                latEsqRengla6.text = ""
 
-                latDretBarSet1.text = ""
-                latDretBarSet2.text = ""
-                latDretBarSet3.text = ""
-                latDretBarSet4.text = ""
-                latDretBarSet5.text = ""
-                latDretBarSet6.text = ""
-                latEsqBarSet1.text = ""
-                latEsqBarSet2.text = ""
-                latEsqBarSet3.text = ""
-                latEsqBarSet4.text = ""
-                latEsqBarSet5.text = ""
-                latEsqBarSet6.text = ""
+                latDretBuidaSet1.text = ""
+                latDretBuidaSet2.text = ""
+                latDretBuidaSet3.text = ""
+                latDretBuidaSet4.text = ""
+                latDretBuidaSet5.text = ""
+                latDretBuidaSet6.text = ""
+                latEsqBuidaSet1.text = ""
+                latEsqBuidaSet2.text = ""
+                latEsqBuidaSet3.text = ""
+                latEsqBuidaSet4.text = ""
+                latEsqBuidaSet5.text = ""
+                latEsqBuidaSet6.text = ""
 
-                latDretMofu1.text = ""
-                latDretMofu2.text = ""
-                latDretMofu3.text = ""
-                latDretMofu4.text = ""
-                latDretMofu5.text = ""
-                latDretMofu6.text = ""
-                latEsqMofu1.text = ""
-                /*latEsqMofu2.text = ""
-                latEsqMofu3.text = ""
-                latEsqMofu4.text = ""
-                latEsqMofu5.text = ""
-                latEsqMofu6.text = ""*/
+                latDretsPlena1.text = ""
+                latDretsPlena2.text = ""
+                latDretsPlena3.text = ""
+                latDretsPlena4.text = ""
+                latDretsPlena5.text = ""
+                latDretsPlena6.text = ""
+                latEsqsPlena1.text = ""
+                /*latEsqsPlena2.text = ""
+                latEsqsPlena3.text = ""
+                latEsqsPlena4.text = ""
+                latEsqsPlena5.text = ""
+                latEsqsPlena6.text = ""*/
 
-                latDretMofuSet1.text = ""
-                /*latDretMofuSet2.text = ""
-                latDretMofuSet3.text = ""
-                latDretMofuSet4.text = ""
-                latDretMofuSet5.text = ""
-                latDretMofuSet6.text = ""*/
-                latEsqMofuSet1.text = ""
-                latEsqMofuSet2.text = ""
-                latEsqMofuSet3.text = ""
-                latEsqMofuSet4.text = ""
-                latEsqMofuSet5.text = ""
-                latEsqMofuSet6.text = ""
+                latDretPlena1Set1.text = ""
+                /*latDretPlena1Set2.text = ""
+                latDretPlena1Set3.text = ""
+                latDretPlena1Set4.text = ""
+                latDretPlena1Set5.text = ""
+                latDretPlena1Set6.text = ""*/
+                latEsqPlena1Set1.text = ""
+                latEsqPlena1Set2.text = ""
+                latEsqPlena1Set3.text = ""
+                latEsqPlena1Set4.text = ""
+                latEsqPlena1Set5.text = ""
+                latEsqPlena1Set6.text = ""
 
-                ventRiu1.text = ""
-                ventRiu2.text = ""
-                ventRiu3.text = ""
-                ventRiu4.text = ""
-                ventRiu5.text = ""
-                ventRiu6.text = ""
-                ventBar1.text = ""
-                ventBar2.text = ""
-                ventBar3.text = ""
-                ventBar4.text = ""
-                ventBar5.text = ""
-                ventBar6.text = ""
-                ventMofu1.text = ""
-                ventMofu2.text = ""
-                ventMofu3.text = ""
-                ventMofu4.text = ""
-                ventMofu5.text = ""
-                ventMofu6.text = ""
-                ventCarrer1.text = ""
-                ventCarrer2.text = ""
-                ventCarrer3.text = ""
-                ventCarrer4.text = ""
-                ventCarrer5.text = ""
-                ventCarrer6.text = ""
+                ventPlena1.text = ""
+                ventPlena2.text = ""
+                ventPlena3.text = ""
+                ventPlena4.text = ""
+                ventPlena5.text = ""
+                ventPlena6.text = ""
+                ventRengla1.text = ""
+                ventRengla2.text = ""
+                ventRengla3.text = ""
+                ventRengla4.text = ""
+                ventRengla5.text = ""
+                ventRengla6.text = ""
+                ventsPlena1.text = ""
+                ventsPlena2.text = ""
+                ventsPlena3.text = ""
+                ventsPlena4.text = ""
+                ventsPlena5.text = ""
+                ventsPlena6.text = ""
+                ventBuida1.text = ""
+                ventBuida2.text = ""
+                ventBuida3.text = ""
+                ventBuida4.text = ""
+                ventBuida5.text = ""
+                ventBuida6.text = ""
             }
         }
         Button {
@@ -3936,221 +3936,221 @@ Rectangle {
         else
         {
             AccionsBD.importarGentdePinya(pinyaActual);
-            agullaBar.text = AccionsBD.trobaNomperPosicio("agullaBar",pinyaActual)
-            agullaRiu.text = AccionsBD.trobaNomperPosicio("agullaRiu",pinyaActual)
-            agullaCarrer.text = AccionsBD.trobaNomperPosicio("agullaCarrer",pinyaActual)
-            agullaMofu.text = AccionsBD.trobaNomperPosicio("agullaMofu",pinyaActual)
+            agullaRengla.text = AccionsBD.trobaNomperPosicio("agullaRengla",pinyaActual)
+            agullaPlena.text = AccionsBD.trobaNomperPosicio("agullaPlena",pinyaActual)
+            agullaBuida.text = AccionsBD.trobaNomperPosicio("agullaBuida",pinyaActual)
+            agullasPlena.text = AccionsBD.trobaNomperPosicio("agullasPlena",pinyaActual)
 
-            agullaBarSet.text = AccionsBD.trobaNomperPosicio("agullaBarSet",pinyaActual)
-            agullaRiuSet.text = AccionsBD.trobaNomperPosicio("agullaRiuSet",pinyaActual)
-            agullaMofuSet.text = AccionsBD.trobaNomperPosicio("agullaMofuSet",pinyaActual)
+            agullaBuidaSet.text = AccionsBD.trobaNomperPosicio("agullaBuidaSet",pinyaActual)
+            agullaPlena2Set.text = AccionsBD.trobaNomperPosicio("agullaPlena2Set",pinyaActual)
+            agullaPlena1Set.text = AccionsBD.trobaNomperPosicio("agullaPlena1Set",pinyaActual)
 
-            baixRiu.text = AccionsBD.trobaNomperPosicio("baixRiu",pinyaActual)
-            baixCarrer.text = AccionsBD.trobaNomperPosicio("baixCarrer",pinyaActual)
-            baixBar.text = AccionsBD.trobaNomperPosicio("baixBar",pinyaActual)
-            baixMofu.text = AccionsBD.trobaNomperPosicio("baixMofu",pinyaActual)
+            baixPlena.text = AccionsBD.trobaNomperPosicio("baixPlena",pinyaActual)
+            baixBuida.text = AccionsBD.trobaNomperPosicio("baixBuida",pinyaActual)
+            baixRengla.text = AccionsBD.trobaNomperPosicio("baixRengla",pinyaActual)
+            baixsPlena.text = AccionsBD.trobaNomperPosicio("baixsPlena",pinyaActual)
 
-            baixRiuSet.text = AccionsBD.trobaNomperPosicio("baixRiuSet",pinyaActual)
-            baixBarSet.text = AccionsBD.trobaNomperPosicio("baixBarSet",pinyaActual)
-            baixMofuSet.text = AccionsBD.trobaNomperPosicio("baixMofuSet",pinyaActual)
+            baixPlena2Set.text = AccionsBD.trobaNomperPosicio("baixPlena2Set",pinyaActual)
+            baixBuidaSet.text = AccionsBD.trobaNomperPosicio("baixBuidaSet",pinyaActual)
+            baixPlena1Set.text = AccionsBD.trobaNomperPosicio("baixPlena1Set",pinyaActual)
 
-            contrafortRiu.text = AccionsBD.trobaNomperPosicio("contrafortRiu",pinyaActual)
-            contrafortCarrer.text = AccionsBD.trobaNomperPosicio("contrafortCarrer",pinyaActual)
-            contrafortBar.text = AccionsBD.trobaNomperPosicio("contrafortBar",pinyaActual)
-            contrafortMofu.text = AccionsBD.trobaNomperPosicio("contrafortMofu",pinyaActual)
+            contrafortPlena.text = AccionsBD.trobaNomperPosicio("contrafortPlena",pinyaActual)
+            contrafortBuida.text = AccionsBD.trobaNomperPosicio("contrafortBuida",pinyaActual)
+            contrafortRengla.text = AccionsBD.trobaNomperPosicio("contrafortRengla",pinyaActual)
+            contrafortsPlena.text = AccionsBD.trobaNomperPosicio("contrafortsPlena",pinyaActual)
 
-            contrafortRiuSet.text = AccionsBD.trobaNomperPosicio("contrafortRiuSet",pinyaActual)
-            contrafortBarSet.text = AccionsBD.trobaNomperPosicio("contrafortBarSet",pinyaActual)
-            contrafortMofuSet.text = AccionsBD.trobaNomperPosicio("contrafortMofuSet",pinyaActual)
+            contrafortPlena2Set.text = AccionsBD.trobaNomperPosicio("contrafortPlena2Set",pinyaActual)
+            contrafortBuidaSet.text = AccionsBD.trobaNomperPosicio("contrafortBuidaSet",pinyaActual)
+            contrafortPlena1Set.text = AccionsBD.trobaNomperPosicio("contrafortPlena1Set",pinyaActual)
 
-            primeresRiu.text = AccionsBD.trobaNomperPosicio("primeresRiu",pinyaActual)
-            primeresCarrer.text = AccionsBD.trobaNomperPosicio("primeresCarrer",pinyaActual)
-            primeresBar.text = AccionsBD.trobaNomperPosicio("primeresBar",pinyaActual)
-            primeresMofu.text = AccionsBD.trobaNomperPosicio("primeresMofu",pinyaActual)
+            primeresPlena.text = AccionsBD.trobaNomperPosicio("primeresPlena",pinyaActual)
+            primeresBuida.text = AccionsBD.trobaNomperPosicio("primeresBuida",pinyaActual)
+            primeresRengla.text = AccionsBD.trobaNomperPosicio("primeresRengla",pinyaActual)
+            primeressPlena.text = AccionsBD.trobaNomperPosicio("primeressPlena",pinyaActual)
 
-            primeresRiuSet.text = AccionsBD.trobaNomperPosicio("primeresRiuSet",pinyaActual)
-            primeresBarSet.text = AccionsBD.trobaNomperPosicio("primeresBarSet",pinyaActual)
-            primeresMofuSet.text = AccionsBD.trobaNomperPosicio("primeresMofuSet",pinyaActual)
+            primeresPlena2Set.text = AccionsBD.trobaNomperPosicio("primeresPlena2Set",pinyaActual)
+            primeresBuidaSet.text = AccionsBD.trobaNomperPosicio("primeresBuidaSet",pinyaActual)
+            primeresPlena1Set.text = AccionsBD.trobaNomperPosicio("primeresPlena1Set",pinyaActual)
 
-            segonesRiu.text = AccionsBD.trobaNomperPosicio("segonesRiu",pinyaActual)
-            segonesCarrer.text = AccionsBD.trobaNomperPosicio("segonesCarrer",pinyaActual)
-            //segonesBar.text = AccionsBD.trobaNomperPosicio("segonesBar",pinyaActual)
-            segonesMofu.text = AccionsBD.trobaNomperPosicio("segonesMofu",pinyaActual)
+            segonesPlena.text = AccionsBD.trobaNomperPosicio("segonesPlena",pinyaActual)
+            segonesBuida.text = AccionsBD.trobaNomperPosicio("segonesBuida",pinyaActual)
+            //segonesRengla.text = AccionsBD.trobaNomperPosicio("segonesRengla",pinyaActual)
+            segonessPlena.text = AccionsBD.trobaNomperPosicio("segonessPlena",pinyaActual)
 
-            segonesRiuSet.text = AccionsBD.trobaNomperPosicio("segonesRiuSet",pinyaActual)
-            segonesBarSet.text = AccionsBD.trobaNomperPosicio("segonesBarSet",pinyaActual)
-            segonesMofuSet.text = AccionsBD.trobaNomperPosicio("segonesMofuSet",pinyaActual)
+            segonesPlena2Set.text = AccionsBD.trobaNomperPosicio("segonesPlena2Set",pinyaActual)
+            segonesBuidaSet.text = AccionsBD.trobaNomperPosicio("segonesBuidaSet",pinyaActual)
+            segonesPlena1Set.text = AccionsBD.trobaNomperPosicio("segonesPlena1Set",pinyaActual)
 
-            terceresRiu.text = AccionsBD.trobaNomperPosicio("terceresRiu",pinyaActual)
-            terceresCarrer.text = AccionsBD.trobaNomperPosicio("terceresCarrer",pinyaActual)
-            //terceresBar.text = AccionsBD.trobaNomperPosicio("terceresBar",pinyaActual)
-            terceresMofu.text = AccionsBD.trobaNomperPosicio("terceresMofu",pinyaActual)
+            terceresPlena.text = AccionsBD.trobaNomperPosicio("terceresPlena",pinyaActual)
+            terceresBuida.text = AccionsBD.trobaNomperPosicio("terceresBuida",pinyaActual)
+            //terceresRengla.text = AccionsBD.trobaNomperPosicio("terceresRengla",pinyaActual)
+            terceressPlena.text = AccionsBD.trobaNomperPosicio("terceressPlena",pinyaActual)
 
-            terceresRiuSet.text = AccionsBD.trobaNomperPosicio("terceresRiuSet",pinyaActual)
-            terceresBarSet.text = AccionsBD.trobaNomperPosicio("terceresBarSet",pinyaActual)
-            terceresMofuSet.text = AccionsBD.trobaNomperPosicio("terceresMofuSet",pinyaActual)
+            terceresPlena2Set.text = AccionsBD.trobaNomperPosicio("terceresPlena2Set",pinyaActual)
+            terceresBuidaSet.text = AccionsBD.trobaNomperPosicio("terceresBuidaSet",pinyaActual)
+            terceresPlena1Set.text = AccionsBD.trobaNomperPosicio("terceresPlena1Set",pinyaActual)
 
-            quartesRiu.text = AccionsBD.trobaNomperPosicio("quartesRiu",pinyaActual)
-            quartesCarrer.text = AccionsBD.trobaNomperPosicio("quartesCarrer",pinyaActual)
-            //quartesBar.text = AccionsBD.trobaNomperPosicio("quartesBar",pinyaActual)
-            quartesMofu.text = AccionsBD.trobaNomperPosicio("quartesMofu",pinyaActual)
+            quartesPlena.text = AccionsBD.trobaNomperPosicio("quartesPlena",pinyaActual)
+            quartesBuida.text = AccionsBD.trobaNomperPosicio("quartesBuida",pinyaActual)
+            //quartesRengla.text = AccionsBD.trobaNomperPosicio("quartesRengla",pinyaActual)
+            quartessPlena.text = AccionsBD.trobaNomperPosicio("quartessPlena",pinyaActual)
 
-            quartesRiuSet.text = AccionsBD.trobaNomperPosicio("quartesRiuSet",pinyaActual)
-            quartesBarSet.text = AccionsBD.trobaNomperPosicio("quartesBarSet",pinyaActual)
-            quartesMofuSet.text = AccionsBD.trobaNomperPosicio("quartesMofuSet",pinyaActual)
+            quartesPlena2Set.text = AccionsBD.trobaNomperPosicio("quartesPlena2Set",pinyaActual)
+            quartesBuidaSet.text = AccionsBD.trobaNomperPosicio("quartesBuidaSet",pinyaActual)
+            quartesPlena1Set.text = AccionsBD.trobaNomperPosicio("quartesPlena1Set",pinyaActual)
 
-            quintesRiu.text = AccionsBD.trobaNomperPosicio("quintesRiu",pinyaActual)
-            quintesCarrer.text = AccionsBD.trobaNomperPosicio("quintesCarrer",pinyaActual)
-            //quintesBar.text = AccionsBD.trobaNomperPosicio("quintesBar",pinyaActual)
-            quintesMofu.text = AccionsBD.trobaNomperPosicio("quintesMofu",pinyaActual)
+            quintesPlena.text = AccionsBD.trobaNomperPosicio("quintesPlena",pinyaActual)
+            quintesBuida.text = AccionsBD.trobaNomperPosicio("quintesBuida",pinyaActual)
+            //quintesRengla.text = AccionsBD.trobaNomperPosicio("quintesRengla",pinyaActual)
+            quintessPlena.text = AccionsBD.trobaNomperPosicio("quintessPlena",pinyaActual)
 
-            quintesRiuSet.text = AccionsBD.trobaNomperPosicio("quintesRiuSet",pinyaActual)
-            quintesBarSet.text = AccionsBD.trobaNomperPosicio("quintesBarSet",pinyaActual)
-            quintesMofuSet.text = AccionsBD.trobaNomperPosicio("quintesMofuSet",pinyaActual)
+            quintesPlena2Set.text = AccionsBD.trobaNomperPosicio("quintesPlena2Set",pinyaActual)
+            quintesBuidaSet.text = AccionsBD.trobaNomperPosicio("quintesBuidaSet",pinyaActual)
+            quintesPlena1Set.text = AccionsBD.trobaNomperPosicio("quintesPlena1Set",pinyaActual)
 
-            sisenesRiu.text = AccionsBD.trobaNomperPosicio("sisenesRiu",pinyaActual)
-            sisenesCarrer.text = AccionsBD.trobaNomperPosicio("sisenesCarrer",pinyaActual)
-            //sisenesBar.text = AccionsBD.trobaNomperPosicio("sisenesBar",pinyaActual)
-            sisenesMofu.text = AccionsBD.trobaNomperPosicio("sisenesMofu",pinyaActual)
+            sisenesPlena.text = AccionsBD.trobaNomperPosicio("sisenesPlena",pinyaActual)
+            sisenesBuida.text = AccionsBD.trobaNomperPosicio("sisenesBuida",pinyaActual)
+            //sisenesRengla.text = AccionsBD.trobaNomperPosicio("sisenesRengla",pinyaActual)
+            sisenessPlena.text = AccionsBD.trobaNomperPosicio("sisenessPlena",pinyaActual)
 
-            sisenesRiuSet.text = AccionsBD.trobaNomperPosicio("sisenesRiuSet",pinyaActual)
-            sisenesBarSet.text = AccionsBD.trobaNomperPosicio("sisenesBarSet",pinyaActual)
-            sisenesMofuSet.text = AccionsBD.trobaNomperPosicio("sisenesMofuSet",pinyaActual)
+            sisenesPlena2Set.text = AccionsBD.trobaNomperPosicio("sisenesPlena2Set",pinyaActual)
+            sisenesBuidaSet.text = AccionsBD.trobaNomperPosicio("sisenesBuidaSet",pinyaActual)
+            sisenesPlena1Set.text = AccionsBD.trobaNomperPosicio("sisenesPlena1Set",pinyaActual)
 
-            crossaRiuD.text = AccionsBD.trobaNomperPosicio("crossaRiuD",pinyaActual)
-            crossaRiuE.text = AccionsBD.trobaNomperPosicio("crossaRiuE",pinyaActual)
-            crossaBarD.text = AccionsBD.trobaNomperPosicio("crossaBarD",pinyaActual)
-            crossaBarE.text = AccionsBD.trobaNomperPosicio("crossaBarE",pinyaActual)
-            crossaMofuD.text = AccionsBD.trobaNomperPosicio("crossaMofuD",pinyaActual)
-            crossaMofuE.text = AccionsBD.trobaNomperPosicio("crossaMofuE",pinyaActual)
-            crossaCarrerD.text = AccionsBD.trobaNomperPosicio("crossaCarrerD",pinyaActual)
-            crossaCarrerE.text = AccionsBD.trobaNomperPosicio("crossaCarrerE",pinyaActual)
-
-
-            crossaRiuSetD.text = AccionsBD.trobaNomperPosicio("crossaRiuSetD",pinyaActual)
-            crossaRiuSetE.text = AccionsBD.trobaNomperPosicio("crossaRiuSetE",pinyaActual)
-            crossaBarSetD.text = AccionsBD.trobaNomperPosicio("crossaBarSetD",pinyaActual)
-            crossaBarSetE.text = AccionsBD.trobaNomperPosicio("crossaBarSetE",pinyaActual)
-            crossaMofuSetD.text = AccionsBD.trobaNomperPosicio("crossaMofuSetD",pinyaActual)
-            crossaMofuSetE.text = AccionsBD.trobaNomperPosicio("crossaMofuSetE",pinyaActual)
+            crossaPlenaD.text = AccionsBD.trobaNomperPosicio("crossaPlenaD",pinyaActual)
+            crossaPlenaE.text = AccionsBD.trobaNomperPosicio("crossaPlenaE",pinyaActual)
+            crossaRenglaD.text = AccionsBD.trobaNomperPosicio("crossaRenglaD",pinyaActual)
+            crossaRenglaE.text = AccionsBD.trobaNomperPosicio("crossaRenglaE",pinyaActual)
+            crossasPlenaD.text = AccionsBD.trobaNomperPosicio("crossasPlenaD",pinyaActual)
+            crossasPlenaE.text = AccionsBD.trobaNomperPosicio("crossasPlenaE",pinyaActual)
+            crossaBuidaD.text = AccionsBD.trobaNomperPosicio("crossaBuidaD",pinyaActual)
+            crossaBuidaE.text = AccionsBD.trobaNomperPosicio("crossaBuidaE",pinyaActual)
 
 
+            crossaPlena2SetD.text = AccionsBD.trobaNomperPosicio("crossaPlena2SetD",pinyaActual)
+            crossaPlena2SetE.text = AccionsBD.trobaNomperPosicio("crossaPlena2SetE",pinyaActual)
+            crossaBuidaSetD.text = AccionsBD.trobaNomperPosicio("crossaBuidaSetD",pinyaActual)
+            crossaBuidaSetE.text = AccionsBD.trobaNomperPosicio("crossaBuidaSetE",pinyaActual)
+            crossaPlena1SetD.text = AccionsBD.trobaNomperPosicio("crossaPlena1SetD",pinyaActual)
+            crossaPlena1SetE.text = AccionsBD.trobaNomperPosicio("crossaPlena1SetE",pinyaActual)
 
-            latDretRiu1.text = AccionsBD.trobaNomperPosicio("latDretRiu1",pinyaActual)
-            /*latDretRiu2.text = AccionsBD.trobaNomperPosicio("latDretRiu2",pinyaActual)
-                latDretRiu3.text = AccionsBD.trobaNomperPosicio("latDretRiu3",pinyaActual)
-                latDretRiu4.text = AccionsBD.trobaNomperPosicio("latDretRiu4",pinyaActual)
-                latDretRiu5.text = AccionsBD.trobaNomperPosicio("latDretRiu5",pinyaActual)
-                latDretRiu6.text = AccionsBD.trobaNomperPosicio("latDretRiu6",pinyaActual)*/
-            latEsqRiu1.text = AccionsBD.trobaNomperPosicio("latEsqRiu1",pinyaActual)
-            latEsqRiu2.text = AccionsBD.trobaNomperPosicio("latEsqRiu2",pinyaActual)
-            latEsqRiu3.text = AccionsBD.trobaNomperPosicio("latEsqRiu3",pinyaActual)
-            latEsqRiu4.text = AccionsBD.trobaNomperPosicio("latEsqRiu4",pinyaActual)
-            latEsqRiu5.text = AccionsBD.trobaNomperPosicio("latEsqRiu5",pinyaActual)
-            latEsqRiu6.text = AccionsBD.trobaNomperPosicio("latEsqRiu6",pinyaActual)
 
-            latDretRiuSet1.text = AccionsBD.trobaNomperPosicio("latDretRiuSet1",pinyaActual)
-            latDretRiuSet2.text = AccionsBD.trobaNomperPosicio("latDretRiuSet2",pinyaActual)
-            latDretRiuSet3.text = AccionsBD.trobaNomperPosicio("latDretRiuSet3",pinyaActual)
-            latDretRiuSet4.text = AccionsBD.trobaNomperPosicio("latDretRiuSet4",pinyaActual)
-            latDretRiuSet5.text = AccionsBD.trobaNomperPosicio("latDretRiuSet5",pinyaActual)
-            latDretRiuSet6.text = AccionsBD.trobaNomperPosicio("latDretRiuSet6",pinyaActual)
-            latEsqRiuSet1.text = AccionsBD.trobaNomperPosicio("latEsqRiuSet1",pinyaActual)
-            /*latEsqRiuSet2.text = AccionsBD.trobaNomperPosicio("latEsqRiuSet2",pinyaActual)
-                latEsqRiuSet3.text = AccionsBD.trobaNomperPosicio("latEsqRiuSet3",pinyaActual)
-                latEsqRiuSet4.text = AccionsBD.trobaNomperPosicio("latEsqRiuSet4",pinyaActual)
-                latEsqRiuSet5.text = AccionsBD.trobaNomperPosicio("latEsqRiuSet5",pinyaActual)
-                latEsqRiuSet6.text = AccionsBD.trobaNomperPosicio("latEsqRiuSet6",pinyaActual)*/
 
-            latDretCarrer1.text = AccionsBD.trobaNomperPosicio("latDretCarrer1",pinyaActual)
-            latDretCarrer2.text = AccionsBD.trobaNomperPosicio("latDretCarrer2",pinyaActual)
-            latDretCarrer3.text = AccionsBD.trobaNomperPosicio("latDretCarrer3",pinyaActual)
-            latDretCarrer4.text = AccionsBD.trobaNomperPosicio("latDretCarrer4",pinyaActual)
-            latDretCarrer5.text = AccionsBD.trobaNomperPosicio("latDretCarrer5",pinyaActual)
-            latDretCarrer6.text = AccionsBD.trobaNomperPosicio("latDretCarrer6",pinyaActual)
-            latEsqCarrer1.text = AccionsBD.trobaNomperPosicio("latEsqCarrer1",pinyaActual)
-            latEsqCarrer2.text = AccionsBD.trobaNomperPosicio("latEsqCarrer2",pinyaActual)
-            latEsqCarrer3.text = AccionsBD.trobaNomperPosicio("latEsqCarrer3",pinyaActual)
-            latEsqCarrer4.text = AccionsBD.trobaNomperPosicio("latEsqCarrer4",pinyaActual)
-            latEsqCarrer5.text = AccionsBD.trobaNomperPosicio("latEsqCarrer5",pinyaActual)
-            latEsqCarrer6.text = AccionsBD.trobaNomperPosicio("latEsqCarrer6",pinyaActual)
+            latDretPlena1.text = AccionsBD.trobaNomperPosicio("latDretPlena1",pinyaActual)
+            /*latDretPlena2.text = AccionsBD.trobaNomperPosicio("latDretPlena2",pinyaActual)
+                latDretPlena3.text = AccionsBD.trobaNomperPosicio("latDretPlena3",pinyaActual)
+                latDretPlena4.text = AccionsBD.trobaNomperPosicio("latDretPlena4",pinyaActual)
+                latDretPlena5.text = AccionsBD.trobaNomperPosicio("latDretPlena5",pinyaActual)
+                latDretPlena6.text = AccionsBD.trobaNomperPosicio("latDretPlena6",pinyaActual)*/
+            latEsqPlena1.text = AccionsBD.trobaNomperPosicio("latEsqPlena1",pinyaActual)
+            latEsqPlena2.text = AccionsBD.trobaNomperPosicio("latEsqPlena2",pinyaActual)
+            latEsqPlena3.text = AccionsBD.trobaNomperPosicio("latEsqPlena3",pinyaActual)
+            latEsqPlena4.text = AccionsBD.trobaNomperPosicio("latEsqPlena4",pinyaActual)
+            latEsqPlena5.text = AccionsBD.trobaNomperPosicio("latEsqPlena5",pinyaActual)
+            latEsqPlena6.text = AccionsBD.trobaNomperPosicio("latEsqPlena6",pinyaActual)
 
-            latDretBar1.text = AccionsBD.trobaNomperPosicio("latDretBar1",pinyaActual)
-            latDretBar2.text = AccionsBD.trobaNomperPosicio("latDretBar2",pinyaActual)
-            latDretBar3.text = AccionsBD.trobaNomperPosicio("latDretBar3",pinyaActual)
-            latDretBar4.text = AccionsBD.trobaNomperPosicio("latDretBar4",pinyaActual)
-            latDretBar5.text = AccionsBD.trobaNomperPosicio("latDretBar5",pinyaActual)
-            latDretBar6.text = AccionsBD.trobaNomperPosicio("latDretBar6",pinyaActual)
-            latEsqBar1.text = AccionsBD.trobaNomperPosicio("latEsqBar1",pinyaActual)
-            latEsqBar2.text = AccionsBD.trobaNomperPosicio("latEsqBar2",pinyaActual)
-            latEsqBar3.text = AccionsBD.trobaNomperPosicio("latEsqBar3",pinyaActual)
-            latEsqBar4.text = AccionsBD.trobaNomperPosicio("latEsqBar4",pinyaActual)
-            latEsqBar5.text = AccionsBD.trobaNomperPosicio("latEsqBar5",pinyaActual)
-            latEsqBar6.text = AccionsBD.trobaNomperPosicio("latEsqBar6",pinyaActual)
+            latDretPlena2Set1.text = AccionsBD.trobaNomperPosicio("latDretPlena2Set1",pinyaActual)
+            latDretPlena2Set2.text = AccionsBD.trobaNomperPosicio("latDretPlena2Set2",pinyaActual)
+            latDretPlena2Set3.text = AccionsBD.trobaNomperPosicio("latDretPlena2Set3",pinyaActual)
+            latDretPlena2Set4.text = AccionsBD.trobaNomperPosicio("latDretPlena2Set4",pinyaActual)
+            latDretPlena2Set5.text = AccionsBD.trobaNomperPosicio("latDretPlena2Set5",pinyaActual)
+            latDretPlena2Set6.text = AccionsBD.trobaNomperPosicio("latDretPlena2Set6",pinyaActual)
+            latEsqPlena2Set1.text = AccionsBD.trobaNomperPosicio("latEsqPlena2Set1",pinyaActual)
+            /*latEsqPlena2Set2.text = AccionsBD.trobaNomperPosicio("latEsqPlena2Set2",pinyaActual)
+                latEsqPlena2Set3.text = AccionsBD.trobaNomperPosicio("latEsqPlena2Set3",pinyaActual)
+                latEsqPlena2Set4.text = AccionsBD.trobaNomperPosicio("latEsqPlena2Set4",pinyaActual)
+                latEsqPlena2Set5.text = AccionsBD.trobaNomperPosicio("latEsqPlena2Set5",pinyaActual)
+                latEsqPlena2Set6.text = AccionsBD.trobaNomperPosicio("latEsqPlena2Set6",pinyaActual)*/
 
-            latDretBarSet1.text = AccionsBD.trobaNomperPosicio("latDretBarSet1",pinyaActual)
-            latDretBarSet2.text = AccionsBD.trobaNomperPosicio("latDretBarSet2",pinyaActual)
-            latDretBarSet3.text = AccionsBD.trobaNomperPosicio("latDretBarSet3",pinyaActual)
-            latDretBarSet4.text = AccionsBD.trobaNomperPosicio("latDretBarSet4",pinyaActual)
-            latDretBarSet5.text = AccionsBD.trobaNomperPosicio("latDretBarSet5",pinyaActual)
-            latDretBarSet6.text = AccionsBD.trobaNomperPosicio("latDretBarSet6",pinyaActual)
-            latEsqBarSet1.text = AccionsBD.trobaNomperPosicio("latEsqBarSet1",pinyaActual)
-            latEsqBarSet2.text = AccionsBD.trobaNomperPosicio("latEsqBarSet2",pinyaActual)
-            latEsqBarSet3.text = AccionsBD.trobaNomperPosicio("latEsqBarSet3",pinyaActual)
-            latEsqBarSet4.text = AccionsBD.trobaNomperPosicio("latEsqBarSet4",pinyaActual)
-            latEsqBarSet5.text = AccionsBD.trobaNomperPosicio("latEsqBarSet5",pinyaActual)
-            latEsqBarSet6.text = AccionsBD.trobaNomperPosicio("latEsqBarSet6",pinyaActual)
+            latDretBuida1.text = AccionsBD.trobaNomperPosicio("latDretBuida1",pinyaActual)
+            latDretBuida2.text = AccionsBD.trobaNomperPosicio("latDretBuida2",pinyaActual)
+            latDretBuida3.text = AccionsBD.trobaNomperPosicio("latDretBuida3",pinyaActual)
+            latDretBuida4.text = AccionsBD.trobaNomperPosicio("latDretBuida4",pinyaActual)
+            latDretBuida5.text = AccionsBD.trobaNomperPosicio("latDretBuida5",pinyaActual)
+            latDretBuida6.text = AccionsBD.trobaNomperPosicio("latDretBuida6",pinyaActual)
+            latEsqBuida1.text = AccionsBD.trobaNomperPosicio("latEsqBuida1",pinyaActual)
+            latEsqBuida2.text = AccionsBD.trobaNomperPosicio("latEsqBuida2",pinyaActual)
+            latEsqBuida3.text = AccionsBD.trobaNomperPosicio("latEsqBuida3",pinyaActual)
+            latEsqBuida4.text = AccionsBD.trobaNomperPosicio("latEsqBuida4",pinyaActual)
+            latEsqBuida5.text = AccionsBD.trobaNomperPosicio("latEsqBuida5",pinyaActual)
+            latEsqBuida6.text = AccionsBD.trobaNomperPosicio("latEsqBuida6",pinyaActual)
 
-            latDretMofu1.text = AccionsBD.trobaNomperPosicio("latDretMofu1",pinyaActual)
-            latDretMofu2.text = AccionsBD.trobaNomperPosicio("latDretMofu2",pinyaActual)
-            latDretMofu3.text = AccionsBD.trobaNomperPosicio("latDretMofu3",pinyaActual)
-            latDretMofu4.text = AccionsBD.trobaNomperPosicio("latDretMofu4",pinyaActual)
-            latDretMofu5.text = AccionsBD.trobaNomperPosicio("latDretMofu5",pinyaActual)
-            latDretMofu6.text = AccionsBD.trobaNomperPosicio("latDretMofu6",pinyaActual)
-            latEsqMofu1.text = AccionsBD.trobaNomperPosicio("latEsqMofu1",pinyaActual)
-            /*latEsqMofu2.text = AccionsBD.trobaNomperPosicio("latEsqMofu2",pinyaActual)
-                latEsqMofu3.text = AccionsBD.trobaNomperPosicio("latEsqMofu3",pinyaActual)
-                latEsqMofu4.text = AccionsBD.trobaNomperPosicio("latEsqMofu4",pinyaActual)
-                latEsqMofu5.text = AccionsBD.trobaNomperPosicio("latEsqMofu5",pinyaActual)
-                latEsqMofu6.text = AccionsBD.trobaNomperPosicio("latEsqMofu6",pinyaActual)*/
+            latDretRengla1.text = AccionsBD.trobaNomperPosicio("latDretRengla1",pinyaActual)
+            latDretRengla2.text = AccionsBD.trobaNomperPosicio("latDretRengla2",pinyaActual)
+            latDretRengla3.text = AccionsBD.trobaNomperPosicio("latDretRengla3",pinyaActual)
+            latDretRengla4.text = AccionsBD.trobaNomperPosicio("latDretRengla4",pinyaActual)
+            latDretRengla5.text = AccionsBD.trobaNomperPosicio("latDretRengla5",pinyaActual)
+            latDretRengla6.text = AccionsBD.trobaNomperPosicio("latDretRengla6",pinyaActual)
+            latEsqRengla1.text = AccionsBD.trobaNomperPosicio("latEsqRengla1",pinyaActual)
+            latEsqRengla2.text = AccionsBD.trobaNomperPosicio("latEsqRengla2",pinyaActual)
+            latEsqRengla3.text = AccionsBD.trobaNomperPosicio("latEsqRengla3",pinyaActual)
+            latEsqRengla4.text = AccionsBD.trobaNomperPosicio("latEsqRengla4",pinyaActual)
+            latEsqRengla5.text = AccionsBD.trobaNomperPosicio("latEsqRengla5",pinyaActual)
+            latEsqRengla6.text = AccionsBD.trobaNomperPosicio("latEsqRengla6",pinyaActual)
 
-            latDretMofuSet1.text = AccionsBD.trobaNomperPosicio("latDretMofuSet1",pinyaActual)
-            /*latDretMofuSet2.text = AccionsBD.trobaNomperPosicio("latDretMofuSet2",pinyaActual)
-                latDretMofuSet3.text = AccionsBD.trobaNomperPosicio("latDretMofuSet3",pinyaActual)
-                latDretMofuSet4.text = AccionsBD.trobaNomperPosicio("latDretMofuSet4",pinyaActual)
-                latDretMofuSet5.text = AccionsBD.trobaNomperPosicio("latDretMofuSet5",pinyaActual)
-                latDretMofuSet6.text = AccionsBD.trobaNomperPosicio("latDretMofuSet6",pinyaActual)*/
-            latEsqMofuSet1.text = AccionsBD.trobaNomperPosicio("latEsqMofuSet1",pinyaActual)
-            latEsqMofuSet2.text = AccionsBD.trobaNomperPosicio("latEsqMofuSet2",pinyaActual)
-            latEsqMofuSet3.text = AccionsBD.trobaNomperPosicio("latEsqMofuSet3",pinyaActual)
-            latEsqMofuSet4.text = AccionsBD.trobaNomperPosicio("latEsqMofuSet4",pinyaActual)
-            latEsqMofuSet5.text = AccionsBD.trobaNomperPosicio("latEsqMofuSet5",pinyaActual)
-            latEsqMofuSet6.text = AccionsBD.trobaNomperPosicio("latEsqMofuSet6",pinyaActual)
+            latDretBuidaSet1.text = AccionsBD.trobaNomperPosicio("latDretBuidaSet1",pinyaActual)
+            latDretBuidaSet2.text = AccionsBD.trobaNomperPosicio("latDretBuidaSet2",pinyaActual)
+            latDretBuidaSet3.text = AccionsBD.trobaNomperPosicio("latDretBuidaSet3",pinyaActual)
+            latDretBuidaSet4.text = AccionsBD.trobaNomperPosicio("latDretBuidaSet4",pinyaActual)
+            latDretBuidaSet5.text = AccionsBD.trobaNomperPosicio("latDretBuidaSet5",pinyaActual)
+            latDretBuidaSet6.text = AccionsBD.trobaNomperPosicio("latDretBuidaSet6",pinyaActual)
+            latEsqBuidaSet1.text = AccionsBD.trobaNomperPosicio("latEsqBuidaSet1",pinyaActual)
+            latEsqBuidaSet2.text = AccionsBD.trobaNomperPosicio("latEsqBuidaSet2",pinyaActual)
+            latEsqBuidaSet3.text = AccionsBD.trobaNomperPosicio("latEsqBuidaSet3",pinyaActual)
+            latEsqBuidaSet4.text = AccionsBD.trobaNomperPosicio("latEsqBuidaSet4",pinyaActual)
+            latEsqBuidaSet5.text = AccionsBD.trobaNomperPosicio("latEsqBuidaSet5",pinyaActual)
+            latEsqBuidaSet6.text = AccionsBD.trobaNomperPosicio("latEsqBuidaSet6",pinyaActual)
 
-            ventRiu1.text = AccionsBD.trobaNomperPosicio("ventRiu1",pinyaActual)
-            ventRiu2.text = AccionsBD.trobaNomperPosicio("ventRiu2",pinyaActual)
-            ventRiu3.text = AccionsBD.trobaNomperPosicio("ventRiu3",pinyaActual)
-            ventRiu4.text = AccionsBD.trobaNomperPosicio("ventRiu4",pinyaActual)
-            ventRiu5.text = AccionsBD.trobaNomperPosicio("ventRiu5",pinyaActual)
-            ventRiu6.text = AccionsBD.trobaNomperPosicio("ventRiu6",pinyaActual)
-            ventBar1.text = AccionsBD.trobaNomperPosicio("ventBar1",pinyaActual)
-            ventBar2.text = AccionsBD.trobaNomperPosicio("ventBar2",pinyaActual)
-            ventBar3.text = AccionsBD.trobaNomperPosicio("ventBar3",pinyaActual)
-            ventBar4.text = AccionsBD.trobaNomperPosicio("ventBar4",pinyaActual)
-            ventBar5.text = AccionsBD.trobaNomperPosicio("ventBar5",pinyaActual)
-            ventBar6.text = AccionsBD.trobaNomperPosicio("ventBar6",pinyaActual)
-            ventMofu1.text = AccionsBD.trobaNomperPosicio("ventMofu1",pinyaActual)
-            ventMofu2.text = AccionsBD.trobaNomperPosicio("ventMofu2",pinyaActual)
-            ventMofu3.text = AccionsBD.trobaNomperPosicio("ventMofu3",pinyaActual)
-            ventMofu4.text = AccionsBD.trobaNomperPosicio("ventMofu4",pinyaActual)
-            ventMofu5.text = AccionsBD.trobaNomperPosicio("ventMofu5",pinyaActual)
-            ventMofu6.text = AccionsBD.trobaNomperPosicio("ventMofu6",pinyaActual)
-            ventCarrer1.text = AccionsBD.trobaNomperPosicio("ventCarrer1",pinyaActual)
-            ventCarrer2.text = AccionsBD.trobaNomperPosicio("ventCarrer2",pinyaActual)
-            ventCarrer3.text = AccionsBD.trobaNomperPosicio("ventCarrer3",pinyaActual)
-            ventCarrer4.text = AccionsBD.trobaNomperPosicio("ventCarrer4",pinyaActual)
-            ventCarrer5.text = AccionsBD.trobaNomperPosicio("ventCarrer5",pinyaActual)
-            ventCarrer6.text = AccionsBD.trobaNomperPosicio("ventCarrer6",pinyaActual)
+            latDretsPlena1.text = AccionsBD.trobaNomperPosicio("latDretsPlena1",pinyaActual)
+            latDretsPlena2.text = AccionsBD.trobaNomperPosicio("latDretsPlena2",pinyaActual)
+            latDretsPlena3.text = AccionsBD.trobaNomperPosicio("latDretsPlena3",pinyaActual)
+            latDretsPlena4.text = AccionsBD.trobaNomperPosicio("latDretsPlena4",pinyaActual)
+            latDretsPlena5.text = AccionsBD.trobaNomperPosicio("latDretsPlena5",pinyaActual)
+            latDretsPlena6.text = AccionsBD.trobaNomperPosicio("latDretsPlena6",pinyaActual)
+            latEsqsPlena1.text = AccionsBD.trobaNomperPosicio("latEsqsPlena1",pinyaActual)
+            /*latEsqsPlena2.text = AccionsBD.trobaNomperPosicio("latEsqsPlena2",pinyaActual)
+                latEsqsPlena3.text = AccionsBD.trobaNomperPosicio("latEsqsPlena3",pinyaActual)
+                latEsqsPlena4.text = AccionsBD.trobaNomperPosicio("latEsqsPlena4",pinyaActual)
+                latEsqsPlena5.text = AccionsBD.trobaNomperPosicio("latEsqsPlena5",pinyaActual)
+                latEsqsPlena6.text = AccionsBD.trobaNomperPosicio("latEsqsPlena6",pinyaActual)*/
+
+            latDretPlena1Set1.text = AccionsBD.trobaNomperPosicio("latDretPlena1Set1",pinyaActual)
+            /*latDretPlena1Set2.text = AccionsBD.trobaNomperPosicio("latDretPlena1Set2",pinyaActual)
+                latDretPlena1Set3.text = AccionsBD.trobaNomperPosicio("latDretPlena1Set3",pinyaActual)
+                latDretPlena1Set4.text = AccionsBD.trobaNomperPosicio("latDretPlena1Set4",pinyaActual)
+                latDretPlena1Set5.text = AccionsBD.trobaNomperPosicio("latDretPlena1Set5",pinyaActual)
+                latDretPlena1Set6.text = AccionsBD.trobaNomperPosicio("latDretPlena1Set6",pinyaActual)*/
+            latEsqPlena1Set1.text = AccionsBD.trobaNomperPosicio("latEsqPlena1Set1",pinyaActual)
+            latEsqPlena1Set2.text = AccionsBD.trobaNomperPosicio("latEsqPlena1Set2",pinyaActual)
+            latEsqPlena1Set3.text = AccionsBD.trobaNomperPosicio("latEsqPlena1Set3",pinyaActual)
+            latEsqPlena1Set4.text = AccionsBD.trobaNomperPosicio("latEsqPlena1Set4",pinyaActual)
+            latEsqPlena1Set5.text = AccionsBD.trobaNomperPosicio("latEsqPlena1Set5",pinyaActual)
+            latEsqPlena1Set6.text = AccionsBD.trobaNomperPosicio("latEsqPlena1Set6",pinyaActual)
+
+            ventPlena1.text = AccionsBD.trobaNomperPosicio("ventPlena1",pinyaActual)
+            ventPlena2.text = AccionsBD.trobaNomperPosicio("ventPlena2",pinyaActual)
+            ventPlena3.text = AccionsBD.trobaNomperPosicio("ventPlena3",pinyaActual)
+            ventPlena4.text = AccionsBD.trobaNomperPosicio("ventPlena4",pinyaActual)
+            ventPlena5.text = AccionsBD.trobaNomperPosicio("ventPlena5",pinyaActual)
+            ventPlena6.text = AccionsBD.trobaNomperPosicio("ventPlena6",pinyaActual)
+            ventRengla1.text = AccionsBD.trobaNomperPosicio("ventRengla1",pinyaActual)
+            ventRengla2.text = AccionsBD.trobaNomperPosicio("ventRengla2",pinyaActual)
+            ventRengla3.text = AccionsBD.trobaNomperPosicio("ventRengla3",pinyaActual)
+            ventRengla4.text = AccionsBD.trobaNomperPosicio("ventRengla4",pinyaActual)
+            ventRengla5.text = AccionsBD.trobaNomperPosicio("ventRengla5",pinyaActual)
+            ventRengla6.text = AccionsBD.trobaNomperPosicio("ventRengla6",pinyaActual)
+            ventsPlena1.text = AccionsBD.trobaNomperPosicio("ventsPlena1",pinyaActual)
+            ventsPlena2.text = AccionsBD.trobaNomperPosicio("ventsPlena2",pinyaActual)
+            ventsPlena3.text = AccionsBD.trobaNomperPosicio("ventsPlena3",pinyaActual)
+            ventsPlena4.text = AccionsBD.trobaNomperPosicio("ventsPlena4",pinyaActual)
+            ventsPlena5.text = AccionsBD.trobaNomperPosicio("ventsPlena5",pinyaActual)
+            ventsPlena6.text = AccionsBD.trobaNomperPosicio("ventsPlena6",pinyaActual)
+            ventBuida1.text = AccionsBD.trobaNomperPosicio("ventBuida1",pinyaActual)
+            ventBuida2.text = AccionsBD.trobaNomperPosicio("ventBuida2",pinyaActual)
+            ventBuida3.text = AccionsBD.trobaNomperPosicio("ventBuida3",pinyaActual)
+            ventBuida4.text = AccionsBD.trobaNomperPosicio("ventBuida4",pinyaActual)
+            ventBuida5.text = AccionsBD.trobaNomperPosicio("ventBuida5",pinyaActual)
+            ventBuida6.text = AccionsBD.trobaNomperPosicio("ventBuida6",pinyaActual)
             AccionsBD.netejarTaula(taulaActual);
             AccionsBD.backupPinya(taulaActual,pinyaActual,"importa");
             omplirModels();

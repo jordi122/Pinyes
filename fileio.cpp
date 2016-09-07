@@ -3,7 +3,9 @@
 #include <windows.h> // for Sleep
 #endif
 // WId windowID; /*!<Variable global WId per a la gestió de les captures de pantalla*/
+#include "osdetails.h"
 QString os; /*!<Variable global os per a emmagatzemar el sistema operatiu en execució*/
+OSDetails osdetails; /*!<Variable de la classe OSDetails*/
 
 /********************************************/
 /* Constructor                              */
@@ -25,6 +27,7 @@ FileIO::~FileIO() { }
 QString FileIO::read(QString posicio)
 {
     /* Tractament del camí al fitxer depenent del S.O. */
+    os = osdetails.getOSName();
     if (mSource.startsWith("file:///")) {
         if (os=="WINDOWS") {
             mSource.replace("file:///","");
@@ -98,8 +101,9 @@ QString FileIO::read(QString posicio)
 /* Escriure el fitxer                       */
 /********************************************/
 bool FileIO::write(const QString& data, QString tipus)
-{
+{   qDebug() << "String: " << data;
     /* Tractament del camí al fitxer depenent del S.O. */
+    os = osdetails.getOSName();
     if (mSource.startsWith("file:///")) {
         if (os=="WINDOWS") {
             mSource.replace("file:///","");
@@ -139,10 +143,13 @@ bool FileIO::write(const QString& data, QString tipus)
 /********************************************/
 bool FileIO::saveScreenshot()
 {
+    os = osdetails.getOSName();
+    qDebug() << "Activat SaveScreenshot a " << os << " arxiu:" << mSource;
     QString format = "jpg";
     /* Tractament del camí al fitxer depenent del S.O. */
     if (mSource.startsWith("file:///")) {
         if (os=="WINDOWS") {
+            qDebug() << "Estem a Windows";
             mSource.replace("file:///","");
         }
         else {
@@ -152,6 +159,8 @@ bool FileIO::saveScreenshot()
 
     if (mSource.isEmpty())
         return false;
+
+    qDebug() << "mSource final: " << mSource;
 
     /*Gravació de la imatge*/
     QScreen *screen = QGuiApplication::primaryScreen();

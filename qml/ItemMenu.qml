@@ -3,7 +3,7 @@ import QtQuick 2.5
 Rectangle {
     id: myButton
     width: 150
-    height: containerMenu.height / 15
+    height: containerMenu.height / 16
     property alias itemName: name.text
     color: "#353945"
 

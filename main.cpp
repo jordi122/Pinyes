@@ -8,26 +8,32 @@ extern QString os; /*!<Variable global que emmagatzema el tipus de sistema opera
 
 
 
-QFont setFontOS(QString osName, QFont font) {
+/*QFont setFontOS(QString osName, QFont font) {
     if (osName=="ANDROID") {
-        font.setPixelSize(20);
+    qDebug() << "Inside if: This OS is ANDROID";
+    font.setPixelSize(20);
     }
     else if (osName=="IOS") {
+        qDebug() << "Inside if: This OS is IOS";
         font.setPixelSize(14);
     }
     else if (osName=="OSX") {
+        qDebug() << "Inside if: This OS is OSX";
         font.setPixelSize(12);
     }
     else if (osName=="LINUX") {
+        qDebug() << "Inside if: This OS is LINUX";
         font.setPixelSize(12);
     }
     else if (osName=="WINDOWS") {
-        font.setPointSize(10);
-    }
-    else {
+        qDebug() << "Inside if: This OS is WINDOWS";
         font.setPixelSize(10);
     }
-    font.setFamily("Arial");
+    else {
+        qDebug() << "Inside if: This OS is UNKNOWN";
+        font.setPixelSize(10);
+    }
+    font.setFamily("Arial");*/
 
 //    En un futur el tamany de font hauria de tenir relació amb la resolució i
 //            el tamany de pantalla. Aquests debugs de sota son per a saber les diferents característiques
@@ -59,9 +65,9 @@ QFont setFontOS(QString osName, QFont font) {
 //        qDebug() << "  Virtual geometry:" << screen->virtualGeometry().x() << screen->virtualGeometry().y() << screen->virtualGeometry().width() << "x" << screen->virtualGeometry().height();
 //        qDebug() << "  Virtual size:" << screen->virtualSize().width() << "x" << screen->virtualSize().height();
 //    }
-
+ /*   qDebug() << "Inside setFontOS: This OS is " << osName << " so, the size is " << font.pixelSize();
     return font;
-}
+}*/
 
 
 //! Funció main principal.
@@ -84,9 +90,11 @@ int main(int argc, char *argv[])
     }
 
     QFont font = app.font();
-    os = osdetails.getOSName();
-
+    font.setPointSizeF(10);
+    /*os = osdetails.getOSName();
+    qDebug() << "This OS is " << os << " so, the size is " << font.pixelSize();
     app.setFont(setFontOS(os, font));
+    qDebug() << "This OS is " << os << " so, the size is " << font.pixelSize();*/
 
     /*Important perque el camí de la base de dades estigui en el directori de'execució*/
     QString pathdirsql = "OfflineStorage";
